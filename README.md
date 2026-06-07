@@ -1,2 +1,2 @@
-# who
+# Wio
 A visualization tool for conversations
