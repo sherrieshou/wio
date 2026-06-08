@@ -5,7 +5,16 @@
 
   ## Running the code
 
-  Run `npm i` to install the dependencies.
+  Install [pnpm](https://pnpm.io/installation) once (shared store across projects):
 
-  Run `npm run dev` to start the development server.
+  ```bash
+  curl -fsSL https://get.pnpm.io/install.sh | sh -
+  ```
+
+  Install dependencies and start the dev server:
+
+  ```bash
+  pnpm install
+  pnpm dev
+  ```
   

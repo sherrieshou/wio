@@ -44,6 +44,16 @@ function App() {
   const timelineSelZRef = useRef<number | null>(null);
   const timelineHovZRef = useRef<number | null>(null);
 
+  const handleSelectFromArchive = useCallback((id: number) => {
+    setActiveConvId(id);
+    setPlotPoints([]);
+    timelineModeRef.current = false;
+    timelineSelZRef.current = null;
+    timelineHovZRef.current = null;
+    setTimelineActive(false);
+    setIsStarted(true);
+  }, []);
+
   // Landing → Recording (State 1 → State 2/3 entry)
   const handleBegin = () => setIsRecording(true);
 
@@ -103,7 +113,11 @@ function App() {
             exit={{ opacity: 0, scale: 1.03 }}
             transition={{ duration: 0.9, ease: 'easeInOut' }}
           >
-            <IntroScreen onBegin={handleBegin} />
+            <IntroScreen
+              onBegin={handleBegin}
+              activeConvId={activeConvId}
+              onSelectFromArchive={handleSelectFromArchive}
+            />
           </motion.div>
 
         ) : isRecording && !isStarted ? (

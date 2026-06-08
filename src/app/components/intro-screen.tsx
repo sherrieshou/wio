@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { motion, AnimatePresence, useAnimation } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Archive } from 'lucide-react';
+import { ArchivePanel } from './archive-panel';
 
 interface IntroScreenProps {
   onBegin: () => void;
+  activeConvId: number;
+  onSelectFromArchive: (id: number) => void;
 }
 
 // ── Star definitions ───────────────────────────────────────────────
@@ -177,9 +180,10 @@ interface OrbitalSys {
   count:  number;
 }
 
-export const IntroScreen: React.FC<IntroScreenProps> = ({ onBegin }) => {
+export const IntroScreen: React.FC<IntroScreenProps> = ({ onBegin, activeConvId, onSelectFromArchive }) => {
   const mountRef   = useRef<HTMLDivElement>(null);
   const [textVisible, setTextVisible] = useState(false);
+  const [archiveOpen, setArchiveOpen] = useState(false);
 
   // Viewport dims for star positioning
   const [minDim, setMinDim] = useState(() =>
@@ -362,6 +366,13 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onBegin }) => {
   return (
     <div className="relative w-full h-full bg-white flex flex-col items-center justify-center overflow-hidden select-none">
 
+      <ArchivePanel
+        isOpen={archiveOpen}
+        onClose={() => setArchiveOpen(false)}
+        activeConvId={activeConvId}
+        onSelect={onSelectFromArchive}
+      />
+
       {/* Three.js canvas — bottom of stack */}
       <div ref={mountRef} className="absolute inset-0 z-0" />
 
@@ -427,6 +438,17 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onBegin }) => {
             >
               Begin Exploration
               <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+
+            <button
+              onClick={() => setArchiveOpen(true)}
+              className="pointer-events-auto mt-5 flex items-center gap-1.5 text-[11px] uppercase tracking-widest text-neutral-400 hover:text-neutral-700 transition-colors duration-300 cursor-pointer group"
+              style={{ fontFamily: "var(--font-body)" }}
+            >
+              <Archive className="w-3 h-3 group-hover:text-neutral-700 transition-colors" />
+              <span className="group-hover:underline underline-offset-[5px] decoration-neutral-400 group-hover:decoration-neutral-600">
+                Archive
+              </span>
             </button>
           </motion.div>
         )}

@@ -81,54 +81,47 @@ export const ArchivePanel: React.FC<ArchivePanelProps> = ({ isOpen, onClose, act
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
-          {/* Backdrop */}
-          <motion.div
-            key="backdrop"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-white/40 backdrop-blur-sm pointer-events-auto"
+        <motion.div
+          key="archive-fullscreen"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.35, ease: [0.32, 0, 0.16, 1] }}
+          className="fixed inset-0 z-50 bg-[#faf9f7] flex flex-col pointer-events-auto"
+          style={{ fontFamily: "var(--font-body)" }}
+        >
+          {/* Close — top right */}
+          <button
             onClick={onClose}
-          />
-
-          {/* Panel */}
-          <motion.div
-            key="panel"
-            initial={{ opacity: 0, x: -24 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -24 }}
-            transition={{ duration: 0.35, ease: [0.32, 0, 0.16, 1] }}
-            className="fixed top-0 left-0 h-full w-80 z-50 bg-[#faf9f7] border-r border-neutral-100/60 flex flex-col pointer-events-auto"
-            style={{ fontFamily: "var(--font-body)" }}
+            aria-label="Close archive"
+            className="absolute top-8 right-8 z-10 w-9 h-9 flex items-center justify-center rounded-full border border-neutral-200/60 bg-white/70 hover:bg-white hover:border-neutral-300 transition-all duration-200 cursor-pointer text-neutral-400 hover:text-neutral-700"
           >
-            {/* Header */}
-            <div className="flex items-center justify-between px-6 pt-8 pb-5 border-b border-neutral-100/60">
-              <div>
-                <p className="text-[9px] uppercase tracking-widest text-neutral-400 mb-0.5">Archive</p>
-                <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 300, fontSize: '15px', color: '#2a2a2a' }}>Saved Conversations</h3>
-              </div>
-              <button
-                onClick={onClose}
-                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-neutral-100/80 transition-colors duration-200 cursor-pointer text-neutral-400 hover:text-neutral-700"
-              >
-                <X className="w-3.5 h-3.5" />
-              </button>
-            </div>
+            <X className="w-4 h-4" />
+          </button>
 
-            {/* List */}
-            <div className="flex-1 overflow-y-auto px-4 py-5 space-y-3">
+          {/* Header */}
+          <div className="px-8 pt-10 pb-6 border-b border-neutral-100/60">
+            <div className="max-w-5xl mx-auto">
+              <p className="text-[9px] uppercase tracking-widest text-neutral-400 mb-1">Archive</p>
+              <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 300, fontSize: 'clamp(22px, 3vw, 28px)', color: '#2a2a2a' }}>
+                Saved Conversations
+              </h3>
+            </div>
+          </div>
+
+          {/* List */}
+          <div className="flex-1 overflow-y-auto px-8 py-8">
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
               {ARCHIVE.map((conv, i) => {
                 const isActive = conv.id === activeConvId;
                 return (
                   <motion.button
                     key={conv.id}
-                    initial={{ opacity: 0, y: 8 }}
+                    initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.06 + 0.08, duration: 0.4 }}
                     onClick={() => { onSelect(conv.id); onClose(); }}
-                    className={`group relative w-full text-left rounded-2xl border transition-all duration-300 p-4 cursor-pointer ${
+                    className={`group relative w-full text-left rounded-2xl border transition-all duration-300 p-5 cursor-pointer ${
                       isActive
                         ? 'border-neutral-200/80 bg-white shadow-sm'
                         : 'border-neutral-100/60 bg-white/60 hover:bg-white hover:border-neutral-200/80 hover:shadow-sm'
@@ -140,7 +133,7 @@ export const ArchivePanel: React.FC<ArchivePanelProps> = ({ isOpen, onClose, act
                         <p className="text-[9px] uppercase tracking-widest text-neutral-400 mb-0.5">
                           Conversation {conv.id}
                         </p>
-                        <h4 style={{ fontFamily: "var(--font-display)", fontWeight: 300, fontSize: '13px', color: '#2a2a2a' }}>{conv.title}</h4>
+                        <h4 style={{ fontFamily: "var(--font-display)", fontWeight: 300, fontSize: '14px', color: '#2a2a2a' }}>{conv.title}</h4>
                       </div>
                       {isActive
                         ? <Check className="w-3 h-3 text-neutral-500 mt-0.5 flex-shrink-0" />
@@ -154,7 +147,7 @@ export const ArchivePanel: React.FC<ArchivePanelProps> = ({ isOpen, onClose, act
                     </p>
 
                     {/* Participants */}
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-center gap-2 mb-3 flex-wrap">
                       {conv.participants.map((p) => (
                         <div key={p.label} className="flex items-center gap-1">
                           <div
@@ -193,15 +186,15 @@ export const ArchivePanel: React.FC<ArchivePanelProps> = ({ isOpen, onClose, act
                 );
               })}
             </div>
+          </div>
 
-            {/* Footer */}
-            <div className="px-6 py-4 border-t border-neutral-100/60">
-              <p className="text-[9px] uppercase tracking-widest text-neutral-300">
-                {ARCHIVE.length} conversations archived
-              </p>
-            </div>
-          </motion.div>
-        </>
+          {/* Footer */}
+          <div className="px-8 py-4 border-t border-neutral-100/60">
+            <p className="max-w-5xl mx-auto text-[9px] uppercase tracking-widest text-neutral-300">
+              {ARCHIVE.length} conversations archived
+            </p>
+          </div>
+        </motion.div>
       )}
     </AnimatePresence>
   );
