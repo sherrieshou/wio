@@ -1,0 +1,97 @@
+{
+  "organic_blob_system": {
+    "name": "Organic Glow Blob Construction",
+    "description": "Rules for making participant glows feel cloud-like and irregular instead of perfectly circular",
+    "global_rules": {
+      "shape_style": "organic_diffused_blob",
+      "perfect_circle_allowed": false,
+      "hard_edge_allowed": false,
+      "use_multiple_layers": true,
+      "layer_count": {
+        "min": 2,
+        "max": 3
+      },
+      "final_blur_px": {
+        "min": 100,
+        "max": 140
+      },
+      "blend_mode": "screen"
+    },
+    "layer_construction": {
+      "primary_layer": {
+        "role": "main identity glow",
+        "shape": "radial_blob",
+        "scale": 1.0,
+        "opacity": 0.85,
+        "offset_x_px": 0,
+        "offset_y_px": 0,
+        "aspect_ratio_range": [0.95, 1.15]
+      },
+      "secondary_layer": {
+        "role": "organic asymmetry",
+        "shape": "radial_blob",
+        "scale": 0.82,
+        "opacity": 0.55,
+        "offset_x_px_range": [-18, 18],
+        "offset_y_px_range": [-16, 16],
+        "aspect_ratio_range": [0.85, 1.2]
+      },
+      "tertiary_layer": {
+        "role": "ambient color spread",
+        "shape": "radial_blob",
+        "scale": 1.18,
+        "opacity": 0.32,
+        "offset_x_px_range": [-24, 24],
+        "offset_y_px_range": [-20, 20],
+        "aspect_ratio_range": [0.9, 1.25]
+      }
+    },
+    "edge_behavior": {
+      "dissolve_to_transparency": true,
+      "visible_ring_allowed": false,
+      "feathering_strength": 1.0,
+      "falloff_style": "slow_diffusion"
+    },
+    "shape_variation": {
+      "enable_subtle_distortion": true,
+      "distortion_amount": 0.12,
+      "allow_ellipse_bias": true,
+      "allow_directional_stretch": true,
+      "stretch_bias_by_trajectory_direction": true,
+      "notes": [
+        "Blob can be slightly elongated along the line direction",
+        "Variation should remain subtle, not noisy",
+        "Shape should feel like diffused light in air"
+      ]
+    },
+    "size_system": {
+      "base_size_px": {
+        "min": 160,
+        "max": 240
+      },
+      "secondary_layer_scale_multiplier": 0.82,
+      "tertiary_layer_scale_multiplier": 1.18
+    },
+    "color_distribution": {
+      "center_bias": "participant_core_color",
+      "mid_bias": "secondary_glow_color",
+      "outer_bias": "outer_glow_color",
+      "allow_cross_layer_hue_shift": true,
+      "hue_shift_strength": 0.08
+    },
+    "motion_optional": {
+      "enabled": false,
+      "notes": [
+        "If animated, use subtle drifting only",
+        "Avoid pulsing that feels like a loading state"
+      ]
+    },
+    "anti_patterns": [
+      "perfect radial circles",
+      "sharp circular silhouette",
+      "single-layer blur only",
+      "equal opacity across all layers",
+      "high saturation neon glow"
+    ]
+  }
+}

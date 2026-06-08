@@ -1,0 +1,58 @@
+{
+  "point_brightness_behavior": {
+    "during_playback": {
+      "current_turn_points": {
+        "brightness": 1.0,
+        "description": "Points in the current turn should appear brightest and most visually prominent."
+      },
+      "past_turn_points": {
+        "brightness": 0.65,
+        "description": "Points from previous turns should remain clearly visible, only slightly dimmed compared to the current turn."
+      },
+      "future_turn_points": {
+        "brightness": 0.0,
+        "description": "Points from future turns should be hidden until their turn appears."
+      }
+    },
+    "after_completion": {
+      "all_points": {
+        "brightness": 0.8,
+        "description": "After the final turn, all points return to a unified brightness so the full trajectory can be viewed as a whole."
+      }
+    }
+  },
+  "active_point_emphasis": {
+    "target": "current turn points",
+    "brightness": 1.0,
+    "scale": 1.15,
+    "glow": {
+      "enabled": true,
+      "radius_multiplier": 1.4,
+      "intensity": "high"
+    },
+    "animation": {
+      "type": "breathing_pulse",
+      "duration_seconds": 1.8,
+      "scale_range": [1.12, 1.18],
+      "glow_radius_range": [1.25, 1.5],
+      "glow_opacity_range": [0.75, 1.0],
+      "easing": "ease-in-out",
+      "loop": true
+    },
+    "description": "The current turn point should gently breathe with a pulsing glow and slightly larger scale, making it the clear visual focal point."
+  },
+  "past_point_style": {
+    "target": "past turn points",
+    "brightness": 0.65,
+    "scale": 1.0,
+    "glow": {
+      "enabled": true,
+      "radius_multiplier": 0.85,
+      "intensity": "medium"
+    },
+    "animation": {
+      "type": "none"
+    },
+    "description": "Past turn points should retain a smaller, softer halo so the historical trajectory remains readable without competing with the active point."
+  }
+}

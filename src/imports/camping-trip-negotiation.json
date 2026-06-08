@@ -1,0 +1,193 @@
+{
+  "scenario": "Teen wants to go camping with friends; parents initially resist but eventually reach a compromise.",
+  "axes": {
+    "x": {
+      "name": "Autonomy ↔ Protection",
+      "positive_5": "strongest autonomy / independence",
+      "zero": "neutral or balanced",
+      "negative_5": "strongest protection / safety control"
+    },
+    "y": {
+      "name": "Negotiation ↔ Confrontation",
+      "negative_5": "calm negotiation / open discussion",
+      "zero": "neutral or tense but controlled",
+      "positive_5": "strong confrontation / shutdown / accusation"
+    },
+    "z": {
+      "name": "Time",
+      "rule": "Each turn increases z by 1",
+      "start_value": 0
+    }
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "z": 0,
+      "dialogue": {
+        "teen": "Mom, I want to go camping this weekend with my friends. We already picked the site. It’s just one night.",
+        "mom": "I really don’t love the idea. A group of teenagers going without adults makes me nervous."
+      },
+      "coordinates": {
+        "teen": { "x": 4, "y": -2, "z": 0 },
+        "mom": { "x": -4, "y": 0, "z": 0 }
+      },
+      "interpretation": {
+        "teen": "The teen begins with a strong autonomy-oriented request but stays relatively calm and proposal-like.",
+        "mom": "The mom is clearly protection-oriented, but her refusal is cautious rather than openly hostile."
+      }
+    },
+    {
+      "turn": 2,
+      "z": 1,
+      "dialogue": {
+        "teen": "I get why you’re worried, but it’s an actual campground, not just random woods. There are staff there, and we’ll have cell service.",
+        "dad": "Okay, slow down. Who exactly is going, and how are you getting there?"
+      },
+      "coordinates": {
+        "teen": { "x": 3, "y": -3, "z": 1 },
+        "dad": { "x": -1, "y": -3, "z": 1 }
+      },
+      "interpretation": {
+        "teen": "The teen stays autonomy-oriented but shifts into a more evidence-based and cooperative explanation.",
+        "dad": "The dad leans slightly toward protection, but his tone is highly negotiative because he asks practical questions instead of shutting the idea down."
+      }
+    },
+    {
+      "turn": 3,
+      "z": 2,
+      "dialogue": {
+        "teen": "Me, Evan, Lucas, and Maya. Evan’s older sister is driving us there, and her mom knows the plan.",
+        "mom": "That’s better than I thought, but I still don’t like that no parent is staying overnight."
+      },
+      "coordinates": {
+        "teen": { "x": 2, "y": -3, "z": 2 },
+        "mom": { "x": -3, "y": -1, "z": 2 }
+      },
+      "interpretation": {
+        "teen": "The teen remains autonomy-oriented but is now more collaborative, supplying details that reduce uncertainty.",
+        "mom": "The mom stays protection-oriented, though her response softens slightly because she acknowledges the new information before restating her concern."
+      }
+    },
+    {
+      "turn": 4,
+      "z": 3,
+      "dialogue": {
+        "teen": "I know, but we’re not trying to do anything reckless. I can send you the campsite link, our schedule, and everyone’s numbers.",
+        "dad": "That actually helps. If we had the location and contact info, I’d feel a lot better."
+      },
+      "coordinates": {
+        "teen": { "x": 2, "y": -4, "z": 3 },
+        "dad": { "x": 0, "y": -4, "z": 3 }
+      },
+      "interpretation": {
+        "teen": "The teen moves toward the center by offering structure and reassurance instead of pushing pure independence.",
+        "dad": "The dad shifts into a strongly negotiative, almost mediating role, showing that concrete planning reduces his resistance."
+      }
+    },
+    {
+      "turn": 5,
+      "z": 4,
+      "dialogue": {
+        "mom": "My issue isn’t that I think you’re irresponsible. I’m thinking about weather, driving at night, and what happens if someone makes a dumb decision.",
+        "teen": "That’s fair. We can leave before dark, and I can check the weather with you tonight if you want."
+      },
+      "coordinates": {
+        "mom": { "x": -3, "y": -1, "z": 4 },
+        "teen": { "x": 1, "y": -3, "z": 4 }
+      },
+      "interpretation": {
+        "mom": "The mom remains protection-oriented, but she explains her fears without escalating into blame.",
+        "teen": "The teen responds in a highly negotiative way, validating her concern and offering concrete concessions."
+      }
+    },
+    {
+      "turn": 6,
+      "z": 5,
+      "dialogue": {
+        "dad": "See, that’s the kind of stuff we need to hear.",
+        "mom": "I’m still uneasy. I don’t want this to turn into one of those situations where everyone says ‘it’ll be fine’ and then nobody has a plan."
+      },
+      "coordinates": {
+        "dad": { "x": 1, "y": -3, "z": 5 },
+        "mom": { "x": -3, "y": 0, "z": 5 }
+      },
+      "interpretation": {
+        "dad": "The dad swings closer to the teen’s side, rewarding cooperation and helping stabilize the discussion.",
+        "mom": "The mom stays protection-oriented and tense, not confrontational but not yet reassured."
+      }
+    },
+    {
+      "turn": 7,
+      "z": 6,
+      "dialogue": {
+        "teen": "Okay, then let’s make an actual plan. I can share my location, text when we get there, and call before lights out. If anything changes, you pick me up.",
+        "dad": "That sounds reasonable.",
+        "mom": "Maybe. I just need to know you understand why this is a big deal to me."
+      },
+      "coordinates": {
+        "teen": { "x": 1, "y": -4, "z": 6 },
+        "dad": { "x": 1, "y": -3, "z": 6 },
+        "mom": { "x": -2, "y": -1, "z": 6 }
+      },
+      "interpretation": {
+        "teen": "The teen moves much closer to the center, showing willingness to accept accountability instead of insisting on total freedom.",
+        "dad": "The dad supports the collaborative turn and acts like a bridge rather than an opponent.",
+        "mom": "The mom is still slightly protection-oriented, but her focus shifts from blocking the trip to being emotionally understood."
+      }
+    },
+    {
+      "turn": 8,
+      "z": 7,
+      "dialogue": {
+        "teen": "I do. I know you’re not just trying to control me. I know you’re worried something could go wrong. I just want a chance to prove I can handle something like this.",
+        "mom": "…Okay. That’s different from how you were saying it before."
+      },
+      "coordinates": {
+        "teen": { "x": 1, "y": -5, "z": 7 },
+        "mom": { "x": -1, "y": -3, "z": 7 }
+      },
+      "interpretation": {
+        "teen": "The teen becomes maximally negotiative by explicitly validating the mom’s perspective while still expressing a desire for autonomy.",
+        "mom": "The mom shifts much closer to the center because she feels heard rather than challenged."
+      }
+    },
+    {
+      "turn": 9,
+      "z": 8,
+      "dialogue": {
+        "dad": "What if we make this a trial run? One night only, no changing locations, and if they don’t stick to the plan, no more trips like this for a while.",
+        "teen": "That’s fair. I can do that.",
+        "mom": "And I want the sister’s number, the campground info, and a check-in when you arrive and before bed."
+      },
+      "coordinates": {
+        "dad": { "x": 0, "y": -4, "z": 8 },
+        "teen": { "x": 1, "y": -4, "z": 8 },
+        "mom": { "x": -1, "y": -2, "z": 8 }
+      },
+      "interpretation": {
+        "dad": "The dad fully occupies a compromise-building role, balancing limited autonomy with structured protection.",
+        "teen": "The teen accepts boundaries without resistance, staying close to the shared middle ground.",
+        "mom": "The mom still wants safeguards, but she is now clearly participating in the compromise rather than rejecting the trip."
+      }
+    },
+    {
+      "turn": 10,
+      "z": 9,
+      "dialogue": {
+        "teen": "Deal. Thank you for actually hearing me out.",
+        "mom": "Thank you for actually talking to us instead of just getting mad.",
+        "dad": "Great. Nobody’s thrilled, everybody’s slightly uncomfortable, which probably means this is a decent compromise."
+      },
+      "coordinates": {
+        "teen": { "x": 0, "y": -5, "z": 9 },
+        "mom": { "x": 0, "y": -4, "z": 9 },
+        "dad": { "x": 0, "y": -3, "z": 9 }
+      },
+      "interpretation": {
+        "teen": "The teen reaches the shared center and ends in a fully cooperative mode.",
+        "mom": "The mom also converges near the center, showing that her need for protection has been integrated into a workable agreement.",
+        "dad": "The dad ends as the stabilizing mediator, affirming the compromise as a balanced outcome."
+      }
+    }
+  ]
+}

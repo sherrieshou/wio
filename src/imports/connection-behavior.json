@@ -1,0 +1,73 @@
+{
+  "connection_behavior": {
+    "enabled": true,
+    "description": "Connect related points with smooth spatial trajectory curves instead of straight lines.",
+    "path_style": {
+      "type": "curved_trajectory",
+      "generation_method": "spline_or_bezier_like",
+      "shape": "gentle arc",
+      "straight_lines": false,
+      "sharp_corners": false,
+      "spatial_feel": true,
+      "description": "Each connection should feel like a natural flowing path through 3D space, suggesting movement, continuity, and semantic progression."
+    },
+    "geometry": {
+      "type": "tube",
+      "flat_stroke": false,
+      "diameter_rule": {
+        "method": "average_connected_point_diameter",
+        "formula": "tube_diameter = average(source_point_diameter, target_point_diameter) / 3"
+      },
+      "description": "Each connection should be rendered as a volumetric 3D tube, not a flat line."
+    },
+    "visual_style": {
+      "surface": "smooth",
+      "shading": "soft volumetric shading",
+      "translucency": "slight",
+      "priority": "secondary to points",
+      "edge_hardness": "soft",
+      "description": "The tube should feel spatial and dimensional, but remain visually subordinate to the points."
+    },
+    "lighting": {
+      "enabled": true,
+      "highlight_visibility": "subtle",
+      "shadow_visibility": "soft",
+      "contrast": "medium-low",
+      "description": "Use gentle lighting so the tube reads as a 3D form without competing with the point emphasis."
+    },
+    "behavior_during_playback": {
+      "current_turn_connections": {
+        "visibility": 1.0,
+        "brightness": 0.9,
+        "description": "Connections involving the current turn should be most visible."
+      },
+      "past_connections": {
+        "visibility": 0.7,
+        "brightness": 0.65,
+        "description": "Past connections should remain visible but slightly subdued."
+      },
+      "future_connections": {
+        "visibility": 0.0,
+        "brightness": 0.0,
+        "description": "Future connections should remain hidden until their turn appears."
+      }
+    },
+    "after_completion": {
+      "all_connections": {
+        "visibility": 1.0,
+        "brightness": 0.8,
+        "description": "After the sequence completes, show all connections with unified medium-high visibility for full trajectory review."
+      }
+    },
+    "constraints": {
+      "avoid": [
+        "straight rigid connectors",
+        "flat 2D strokes",
+        "sharp angular bends",
+        "overly thick tubes",
+        "mechanical-looking paths"
+      ]
+    },
+    "design_intent": "Connections should feel like semantic trajectories through space rather than technical connectors."
+  }
+}

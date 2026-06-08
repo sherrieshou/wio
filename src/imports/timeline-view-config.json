@@ -1,0 +1,189 @@
+{
+  "timeline_view_system": {
+    "enabled": true,
+    "description": "A post-playback inspection mode that appears automatically after all turns are generated, allowing the user to inspect the conversation turn by turn.",
+    "entry_behavior": {
+      "trigger": "all_turns_generated",
+      "mode": "automatic",
+      "action": "enter_timeline_view",
+      "transition": {
+        "timeline_appearance": "fade_or_slide_in_from_bottom",
+        "3d_map_mode_change": "playback_to_inspection",
+        "duration_ms": 500,
+        "easing": "ease-in-out"
+      },
+      "description": "Timeline View should appear automatically when playback ends."
+    },
+    "initial_state": {
+      "default_selected_turn": "last",
+      "timeline_focus": "final_turn_node",
+      "map_state": {
+        "selected_turn_points": {
+          "brightness": 1.0,
+          "saturation": 1.0,
+          "muted": false
+        },
+        "non_selected_points": {
+          "brightness": 0.25,
+          "saturation": 0.15,
+          "muted": true,
+          "color_mode": "greyed"
+        },
+        "selected_related_trajectory": {
+          "opacity": 0.22,
+          "brightness": 0.45,
+          "muted": false
+        },
+        "non_selected_trajectories": {
+          "opacity": 0.12,
+          "brightness": 0.2,
+          "muted": true,
+          "color_mode": "greyed"
+        }
+      },
+      "description": "When Timeline View first appears, the final turn is selected. Only final-turn points are fully lit."
+    },
+    "layout": {
+      "position": "bottom",
+      "orientation": "horizontal",
+      "scrollable": true,
+      "node_per_turn": true,
+      "labels": "turn_number",
+      "style": "minimal, elegant, integrated with 3D plot"
+    },
+    "timeline_nodes": {
+      "states": {
+        "default": {
+          "size": 0.85,
+          "opacity": 0.45,
+          "brightness": 0.5,
+          "ring": false,
+          "glow": false,
+          "description": "Unselected and unhovered turn node."
+        },
+        "hover": {
+          "size": 1.0,
+          "opacity": 0.75,
+          "brightness": 0.8,
+          "ring": true,
+          "ring_opacity": 0.4,
+          "glow": true,
+          "glow_opacity": 0.18,
+          "description": "Hovered turn node previews corresponding 3D points."
+        },
+        "selected": {
+          "size": 1.12,
+          "opacity": 1.0,
+          "brightness": 1.0,
+          "ring": true,
+          "ring_opacity": 0.7,
+          "glow": true,
+          "glow_opacity": 0.28,
+          "description": "Active turn node, clearly highlighted."
+        },
+        "passed": {
+          "size": 0.92,
+          "opacity": 0.62,
+          "brightness": 0.65,
+          "ring": false,
+          "glow": false,
+          "description": "Optional visited state, more visible than default but less emphasized than selected."
+        }
+      }
+    },
+    "interaction": {
+      "hover": {
+        "enabled": true,
+        "behavior": "preview_turn",
+        "3d_map_response": {
+          "hovered_turn_points": {
+            "brightness": 0.9,
+            "saturation": 0.9,
+            "muted": false
+          },
+          "other_points": {
+            "brightness": 0.25,
+            "saturation": 0.15,
+            "muted": true
+          },
+          "hovered_related_trajectory": {
+            "opacity": 0.18,
+            "brightness": 0.35
+          },
+          "other_trajectories": {
+            "opacity": 0.12,
+            "brightness": 0.2
+          }
+        }
+      },
+      "click": {
+        "enabled": true,
+        "behavior": "select_turn",
+        "3d_map_response": {
+          "selected_turn_points": {
+            "brightness": 1.0,
+            "saturation": 1.0,
+            "muted": false
+          },
+          "other_points": {
+            "brightness": 0.25,
+            "saturation": 0.15,
+            "muted": true
+          },
+          "selected_related_trajectory": {
+            "opacity": 0.22,
+            "brightness": 0.45
+          },
+          "other_trajectories": {
+            "opacity": 0.12,
+            "brightness": 0.2
+          }
+        }
+      },
+      "scrub": {
+        "enabled": true,
+        "description": "Users can move across timeline nodes to inspect conversation turns sequentially."
+      },
+      "multi_speaker_turn_behavior": {
+        "enabled": true,
+        "description": "If a selected turn contains multiple speakers, all corresponding points in that turn should light up together."
+      }
+    },
+    "exit_timeline_view_button": {
+      "enabled": true,
+      "label": "Exit Timeline View",
+      "placement": {
+        "relative_to_timeline": "adjacent_right",
+        "alignment": "vertical_center"
+      },
+      "style": {
+        "priority": "secondary",
+        "size": "small_to_medium",
+        "tone": "minimal but clearly clickable",
+        "opacity": 0.9
+      },
+      "interaction": {
+        "click_action": "exit_timeline_view"
+      },
+      "exit_behavior": {
+        "3d_map_mode": "normal_exploration",
+        "timeline_visibility": "hidden_or_collapsed",
+        "point_state": {
+          "all_points_brightness": 0.8,
+          "all_points_saturation": 1.0,
+          "muted": false
+        },
+        "trajectory_state": {
+          "all_trajectories_opacity": 0.28,
+          "all_trajectories_brightness": 0.35,
+          "muted": false
+        },
+        "selection_state": {
+          "clear_timeline_selection": true
+        }
+      },
+      "description": "Allows the user to leave Timeline View and return to normal 3D map exploration."
+    },
+    "design_intent": "Timeline View should function as a post-playback analysis mode: automatic entry, clear turn-by-turn inspection, and easy exit back to the full 3D map."
+  }
+}

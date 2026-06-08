@@ -1,0 +1,56 @@
+{
+  "trajectory_behavior": {
+    "enabled": true,
+    "description": "Use one continuous smooth trajectory instead of separate point-to-point connectors.",
+    "path_style": {
+      "type": "continuous_trajectory",
+      "generation_method": "smooth_spline_or_bezier_like",
+      "straight_segments": false,
+      "sharp_corners": false,
+      "broken_connections": false,
+      "description": "The path should read as one flowing semantic trajectory through space."
+    },
+    "update_rule": {
+      "mode": "incremental_extension",
+      "description": "When a new point appears, extend and update the existing trajectory as a single continuous path rather than drawing an isolated new segment."
+    },
+    "z_axis_feel": {
+      "enabled": true,
+      "description": "The trajectory should feel like it gently extends forward along the z-axis as time progresses.",
+      "forward_growth": "subtle",
+      "time_flow_emphasis": "medium"
+    },
+    "geometry": {
+      "type": "tube",
+      "flat_stroke": false,
+      "diameter_rule": {
+        "method": "point_diameter_fraction",
+        "formula": "tube_diameter = point_diameter / 5"
+      },
+      "description": "Render the trajectory as a thin volumetric 3D tube."
+    },
+    "visual_style": {
+      "surface": "smooth",
+      "shading": "soft volumetric shading",
+      "translucency": "slight",
+      "opacity": {
+        "current_active_trajectory": 0.32,
+        "past_trajectory": 0.22,
+        "after_completion": 0.28
+      },
+      "priority": "secondary to points",
+      "description": "The trajectory should remain visually elegant, soft, and lighter than the points."
+    },
+    "constraints": {
+      "avoid": [
+        "thick tubes",
+        "high-opacity tubes",
+        "straight rigid connections",
+        "disconnected segment chains",
+        "sharp angular bends",
+        "mechanical path shapes"
+      ]
+    },
+    "design_intent": "The line should feel like a living, continuous conversation trace evolving through semantic space over time."
+  }
+}

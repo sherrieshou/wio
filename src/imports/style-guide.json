@@ -1,0 +1,317 @@
+Apply this style guide to the product UI and interface chrome only. Do not restyle the core 3D semantic visualization area. Keep the 3D points, axes, trajectories, and semantic map behavior based on the previously defined visualization-specific rules.
+{
+  "style_guide": {
+    "name": "Soft Contemporary Editorial UI",
+    "description": "A soft, rounded, contemporary editorial interface for a premium mobile product. Use strong modern display typography, rounded functional typography, airy spacing, light neutral backgrounds, and localized blurred blob accents. Do not override the previously defined 3D visualization system for points, axes, trajectories, or semantic map behavior.",
+    "global_instruction": {
+      "apply_to_ui": true,
+      "apply_to_3d_visualization_core": false,
+      "description": "This style guide should control the surrounding product UI, screens, panels, cards, buttons, forms, timeline chrome, and interface layout. Do NOT restyle the 3D axis / 3D points / trajectories / semantic map core, which should remain based on the previously defined visualization specs."
+    },
+    "mood": [
+      "soft",
+      "rounded",
+      "contemporary",
+      "premium",
+      "airy",
+      "minimal",
+      "calm",
+      "editorial through hierarchy",
+      "slightly playful",
+      "human"
+    ],
+    "typography": {
+      "system_description": "Use a three-layer type system: strong display, soft secondary display, and functional UI text.",
+      "fonts": {
+        "display_primary": {
+          "name": "Cabinet Grotesk",
+          "weight": "ExtraBold",
+          "role": "hero headlines and strong visual anchors"
+        },
+        "display_secondary": {
+          "name": "Cabinet Grotesk",
+          "weight": "Light",
+          "role": "secondary display text, editorial subheadings, large supporting statements"
+        },
+        "functional_ui": {
+          "name": "Satoshi",
+          "weight": "Medium",
+          "role": "body text, labels, buttons, inputs, metadata, helper text, navigation"
+        }
+      },
+      "type_scale": {
+        "hero_title": {
+          "font": "Cabinet Grotesk",
+          "weight": "ExtraBold",
+          "size": 40,
+          "line_height": 44,
+          "letter_spacing": "-1%",
+          "usage": [
+            "screen hero",
+            "main onboarding title",
+            "major section title"
+          ]
+        },
+        "section_heading": {
+          "font": "Cabinet Grotesk",
+          "weight": "Light",
+          "size": 28,
+          "line_height": 32,
+          "letter_spacing": "0",
+          "usage": [
+            "section headings",
+            "major content headers",
+            "editorial subheads"
+          ]
+        },
+        "card_title": {
+          "font": "Cabinet Grotesk",
+          "weight": "Light",
+          "size": 22,
+          "line_height": 26,
+          "letter_spacing": "0",
+          "usage": [
+            "card titles",
+            "content tiles",
+            "highlighted short text"
+          ]
+        },
+        "body_large": {
+          "font": "Satoshi",
+          "weight": "Medium",
+          "size": 17,
+          "line_height": 26,
+          "letter_spacing": "0",
+          "usage": [
+            "main paragraph text",
+            "descriptions",
+            "longer explanatory copy"
+          ]
+        },
+        "body_regular": {
+          "font": "Satoshi",
+          "weight": "Medium",
+          "size": 15,
+          "line_height": 22,
+          "letter_spacing": "0",
+          "usage": [
+            "general body text",
+            "card content",
+            "secondary copy"
+          ]
+        },
+        "button_text": {
+          "font": "Satoshi",
+          "weight": "Medium",
+          "size": 16,
+          "line_height": 20,
+          "letter_spacing": "0.5%",
+          "usage": [
+            "primary buttons",
+            "secondary buttons"
+          ]
+        },
+        "label": {
+          "font": "Satoshi",
+          "weight": "Medium",
+          "size": 14,
+          "line_height": 18,
+          "letter_spacing": "0.5%",
+          "usage": [
+            "labels",
+            "field titles",
+            "metadata",
+            "functional UI text"
+          ]
+        },
+        "caption": {
+          "font": "Satoshi",
+          "weight": "Medium",
+          "size": 12,
+          "line_height": 16,
+          "letter_spacing": "1%",
+          "usage": [
+            "captions",
+            "tiny annotations",
+            "timeline labels",
+            "helper text"
+          ]
+        }
+      },
+      "rules": {
+        "hero_density": "Use Cabinet Grotesk ExtraBold sparingly.",
+        "editorial_balance": "Cabinet Grotesk Light should bridge strong headlines and functional UI.",
+        "functional_dominance": "Most UI text should use Satoshi Medium.",
+        "avoid": [
+          "too many extra bold headings on one screen",
+          "using display typography for small labels",
+          "dense headline stacking"
+        ]
+      }
+    },
+    "color_system": {
+      "background": {
+        "base": "warm off-white / soft paper grey",
+        "full_screen_gradient": false,
+        "description": "Use a clean light neutral background. Do not use a full-page pink gradient wash."
+      },
+      "text_colors": {
+        "primary": "soft black / dark charcoal",
+        "secondary": "muted grey",
+        "tertiary": "light grey"
+      },
+      "accent_graphics": {
+        "type": "localized blurred blobs",
+        "behavior": "soft atmospheric accents, not background coverage",
+        "palette": [
+          "soft blue",
+          "pink",
+          "lavender",
+          "mint",
+          "lime yellow"
+        ],
+        "description": "Use colorful blurred blobs as object-like accents, floating highlights, or soft visual anchors."
+      },
+      "ui_surfaces": {
+        "cards": "warm white or very light neutral",
+        "secondary_surface": "soft grey-white",
+        "outline": "very light grey"
+      },
+      "contrast_logic": {
+        "ui_structure": "calm and restrained",
+        "accent_graphics": "softly saturated",
+        "text": "high enough contrast for readability"
+      }
+    },
+    "shape_language": {
+      "description": "Use rounded, gentle, tactile shapes throughout the UI.",
+      "corners": {
+        "cards": "large radius",
+        "panels": "large radius",
+        "buttons": "pill or highly rounded",
+        "inputs": "soft rounded rectangle"
+      },
+      "feel": [
+        "rounded",
+        "soft",
+        "tactile",
+        "gentle",
+        "non-industrial"
+      ],
+      "avoid": [
+        "sharp industrial edges",
+        "hard geometric UI blocks",
+        "boxy enterprise UI"
+      ]
+    },
+    "layout_system": {
+      "density": "low",
+      "whitespace": "generous",
+      "composition": "quiet, balanced, spacious",
+      "hierarchy": "single-column mobile-first",
+      "headline_rule": "one strong headline per screen",
+      "card_logic": "use soft cards as content islands in open space",
+      "avoid": [
+        "dense dashboard structures",
+        "cramped multi-column layouts",
+        "visual clutter"
+      ]
+    },
+    "components": {
+      "buttons": {
+        "primary": {
+          "shape": "pill",
+          "fill": "dark charcoal / black",
+          "text_color": "white",
+          "shadow": "minimal or none",
+          "tone": "strong but soft"
+        },
+        "secondary": {
+          "shape": "pill",
+          "fill": "light neutral",
+          "text_color": "dark charcoal",
+          "border": "subtle or none",
+          "tone": "quiet and refined"
+        }
+      },
+      "inputs": {
+        "shape": "rounded rectangle",
+        "fill": "soft white or light neutral",
+        "border": "subtle",
+        "tone": "friendly and calm"
+      },
+      "cards": {
+        "shape": "large rounded rectangle",
+        "fill": "warm white / soft grey-white",
+        "elevation": "very subtle",
+        "shadow": "soft and restrained",
+        "tone": "airy, premium, quiet"
+      },
+      "labels_and_annotations": {
+        "font": "Satoshi Medium",
+        "tone": "small, understated, editorial note feeling"
+      },
+      "navigation": {
+        "tone": "minimal and clean",
+        "icon_weight": "light to medium",
+        "avoid": "heavy chrome"
+      },
+      "timeline_chrome": {
+        "style": "minimal, elegant, softly interactive",
+        "description": "Timeline UI should follow this product style, but the 3D map emphasis behavior remains governed by the dedicated 3D specs."
+      }
+    },
+    "decorative_language": {
+      "elements": [
+        "soft blurred blobs",
+        "tiny dots",
+        "small stars or lightweight marks in moderation"
+      ],
+      "behavior": "use sparingly and keep airy",
+      "avoid": [
+        "childish decoration",
+        "overly busy graphic layers"
+      ]
+    },
+    "motion_and_interaction_tone": {
+      "style": "soft, calm, smooth",
+      "transitions": "ease-in-out, slightly slowed",
+      "hover_and_focus": "subtle emphasis, no aggressive motion",
+      "avoid": [
+        "flashy microinteractions",
+        "harsh abrupt transitions"
+      ]
+    },
+    "3d_visualization_exception": {
+      "do_not_override": true,
+      "description": "Do not apply this UI style guide to the core semantic 3D visualization system.",
+      "preserve_existing_specs_for": [
+        "3D point shapes",
+        "3D point glow and brightness logic",
+        "3D point breathing emphasis",
+        "trajectory tube behavior",
+        "camera/view logic",
+        "axis annotation system",
+        "semantic map interaction logic"
+      ],
+      "ui_can_style_only": [
+        "surrounding panels",
+        "buttons",
+        "labels outside the 3D world",
+        "timeline container and controls",
+        "overlay UI elements",
+        "screen layout and navigation"
+      ]
+    },
+    "avoid": [
+      "full-page pink gradient onboarding backgrounds",
+      "cold corporate product UI",
+      "overly technical styling",
+      "heavy shadows",
+      "glossy glassmorphism",
+      "too many bold headlines",
+      "boxy dashboard aesthetics"
+    ],
+    "design_intent": "The interface should feel like a premium, soft, contemporary editorial product. The surrounding UI should be warm, spacious, rounded, and refined, while the 3D semantic visualization remains governed by its own dedicated visual rules."
+  }
+}

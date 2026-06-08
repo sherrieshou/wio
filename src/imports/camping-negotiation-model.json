@@ -1,0 +1,838 @@
+{
+  "conversation_id": "conversation_2",
+  "title": "Camping Negotiation - Family Argument Visual Semantic Model",
+  "axes": {
+    "x": {
+      "negative": "protection_control",
+      "positive": "autonomy_independence"
+    },
+    "y": {
+      "negative": "negotiation",
+      "positive": "confrontation"
+    },
+    "z": "time_sequence"
+  },
+  "semantic_factor_scale": {
+    "min": 0,
+    "max": 1
+  },
+  "visual_parameter_scale": {
+    "min": 0,
+    "max": 1
+  },
+  "utterances": [
+    {
+      "turn": 1,
+      "utterance_id": "t1_teen",
+      "speaker": "teen",
+      "target": ["mom", "dad"],
+      "text": "Mom, I want to go camping this weekend with my friends. We already picked the site. It's just one night.",
+      "position": {
+        "x": 4,
+        "y": -2,
+        "z": 0
+      },
+      "semantic_factors": {
+        "assertion": 0.82,
+        "defensiveness": 0.08,
+        "vulnerability": 0.16,
+        "repair": 0.18,
+        "control": 0.12,
+        "empathy": 0.1
+      },
+      "visual_parameters": {
+        "core_intensity": 0.74,
+        "glow_radius": 0.36,
+        "glow_softness": 0.42,
+        "hue_shift": 0.08,
+        "blend_openness": 0.2,
+        "line_opacity": 0.74,
+        "line_stability": 0.7,
+        "line_tension": 0.24
+      },
+      "overlap_state": {
+        "type": "none",
+        "with": [],
+        "reason": "Opening statement; no active semantic convergence yet."
+      }
+    },
+    {
+      "turn": 1,
+      "utterance_id": "t1_mom",
+      "speaker": "mom",
+      "target": ["teen"],
+      "text": "I really don't love the idea. A group of teenagers going without adults makes me nervous.",
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": 0
+      },
+      "semantic_factors": {
+        "assertion": 0.68,
+        "defensiveness": 0.22,
+        "vulnerability": 0.48,
+        "repair": 0.12,
+        "control": 0.66,
+        "empathy": 0.18
+      },
+      "visual_parameters": {
+        "core_intensity": 0.72,
+        "glow_radius": 0.5,
+        "glow_softness": 0.5,
+        "hue_shift": 0.06,
+        "blend_openness": 0.22,
+        "line_opacity": 0.66,
+        "line_stability": 0.74,
+        "line_tension": 0.52
+      },
+      "overlap_state": {
+        "type": "none",
+        "with": [],
+        "reason": "Strong position-setting with low relational openness."
+      }
+    },
+    {
+      "turn": 2,
+      "utterance_id": "t2_teen",
+      "speaker": "teen",
+      "target": ["mom"],
+      "text": "I get why you're worried, but it's an actual campground, not just random woods. There are staff there, and we'll have cell service.",
+      "position": {
+        "x": 3,
+        "y": -3,
+        "z": 1
+      },
+      "semantic_factors": {
+        "assertion": 0.64,
+        "defensiveness": 0.34,
+        "vulnerability": 0.2,
+        "repair": 0.54,
+        "control": 0.1,
+        "empathy": 0.62
+      },
+      "visual_parameters": {
+        "core_intensity": 0.58,
+        "glow_radius": 0.48,
+        "glow_softness": 0.6,
+        "hue_shift": 0.36,
+        "blend_openness": 0.58,
+        "line_opacity": 0.62,
+        "line_stability": 0.68,
+        "line_tension": 0.22
+      },
+      "overlap_state": {
+        "type": "contact_only",
+        "with": ["mom"],
+        "reason": "Teen acknowledges Mom's concern, but Mom has not softened enough for full merge."
+      }
+    },
+    {
+      "turn": 2,
+      "utterance_id": "t2_dad",
+      "speaker": "dad",
+      "target": ["teen"],
+      "text": "Okay, slow down. Who exactly is going, and how are you getting there?",
+      "position": {
+        "x": -1,
+        "y": -3,
+        "z": 1
+      },
+      "semantic_factors": {
+        "assertion": 0.42,
+        "defensiveness": 0.08,
+        "vulnerability": 0.14,
+        "repair": 0.46,
+        "control": 0.42,
+        "empathy": 0.34
+      },
+      "visual_parameters": {
+        "core_intensity": 0.46,
+        "glow_radius": 0.4,
+        "glow_softness": 0.56,
+        "hue_shift": 0.16,
+        "blend_openness": 0.42,
+        "line_opacity": 0.5,
+        "line_stability": 0.62,
+        "line_tension": 0.24
+      },
+      "overlap_state": {
+        "type": "guided_alignment",
+        "with": ["teen"],
+        "reason": "Dad opens a procedural bridge through questions rather than rejection."
+      }
+    },
+    {
+      "turn": 3,
+      "utterance_id": "t3_teen",
+      "speaker": "teen",
+      "target": ["mom", "dad"],
+      "text": "Me, Evan, Lucas, and Maya. Evan's older sister is driving us there, and her mom knows the plan.",
+      "position": {
+        "x": 2,
+        "y": -3,
+        "z": 2
+      },
+      "semantic_factors": {
+        "assertion": 0.56,
+        "defensiveness": 0.18,
+        "vulnerability": 0.18,
+        "repair": 0.62,
+        "control": 0.06,
+        "empathy": 0.42
+      },
+      "visual_parameters": {
+        "core_intensity": 0.5,
+        "glow_radius": 0.48,
+        "glow_softness": 0.62,
+        "hue_shift": 0.22,
+        "blend_openness": 0.56,
+        "line_opacity": 0.56,
+        "line_stability": 0.66,
+        "line_tension": 0.18
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["dad"],
+        "reason": "Teen provides specifics that align well with Dad's information-seeking stance."
+      }
+    },
+    {
+      "turn": 3,
+      "utterance_id": "t3_mom",
+      "speaker": "mom",
+      "target": ["teen"],
+      "text": "That's better than I thought, but I still don't like that no parent is staying overnight.",
+      "position": {
+        "x": -3,
+        "y": -1,
+        "z": 2
+      },
+      "semantic_factors": {
+        "assertion": 0.58,
+        "defensiveness": 0.18,
+        "vulnerability": 0.34,
+        "repair": 0.32,
+        "control": 0.58,
+        "empathy": 0.26
+      },
+      "visual_parameters": {
+        "core_intensity": 0.62,
+        "glow_radius": 0.42,
+        "glow_softness": 0.48,
+        "hue_shift": 0.12,
+        "blend_openness": 0.3,
+        "line_opacity": 0.58,
+        "line_stability": 0.68,
+        "line_tension": 0.4
+      },
+      "overlap_state": {
+        "type": "contact_only",
+        "with": ["teen"],
+        "reason": "Mom shows minor openness but still preserves protective distance."
+      }
+    },
+    {
+      "turn": 4,
+      "utterance_id": "t4_teen",
+      "speaker": "teen",
+      "target": ["mom", "dad"],
+      "text": "I know, but we're not trying to do anything reckless. I can send you the campsite link, our schedule, and everyone's numbers.",
+      "position": {
+        "x": 2,
+        "y": -4,
+        "z": 3
+      },
+      "semantic_factors": {
+        "assertion": 0.52,
+        "defensiveness": 0.42,
+        "vulnerability": 0.28,
+        "repair": 0.76,
+        "control": 0.08,
+        "empathy": 0.64
+      },
+      "visual_parameters": {
+        "core_intensity": 0.48,
+        "glow_radius": 0.62,
+        "glow_softness": 0.72,
+        "hue_shift": 0.4,
+        "blend_openness": 0.7,
+        "line_opacity": 0.54,
+        "line_stability": 0.7,
+        "line_tension": 0.16
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["dad", "mom"],
+        "reason": "Teen actively gives up informational control to create trust and reduce friction."
+      }
+    },
+    {
+      "turn": 4,
+      "utterance_id": "t4_dad",
+      "speaker": "dad",
+      "target": ["teen"],
+      "text": "That actually helps. If we had the location and contact info, I'd feel a lot better.",
+      "position": {
+        "x": 0,
+        "y": -4,
+        "z": 3
+      },
+      "semantic_factors": {
+        "assertion": 0.34,
+        "defensiveness": 0.06,
+        "vulnerability": 0.44,
+        "repair": 0.72,
+        "control": 0.26,
+        "empathy": 0.58
+      },
+      "visual_parameters": {
+        "core_intensity": 0.38,
+        "glow_radius": 0.68,
+        "glow_softness": 0.78,
+        "hue_shift": 0.34,
+        "blend_openness": 0.76,
+        "line_opacity": 0.44,
+        "line_stability": 0.6,
+        "line_tension": 0.12
+      },
+      "overlap_state": {
+        "type": "guided_alignment",
+        "with": ["teen"],
+        "reason": "Dad validates Teen's approach and creates a strong relational bridge."
+      }
+    },
+    {
+      "turn": 5,
+      "utterance_id": "t5_mom",
+      "speaker": "mom",
+      "target": ["teen", "dad"],
+      "text": "My issue isn't that I think you're irresponsible. I'm thinking about weather, driving at night, and what happens if someone makes a dumb decision.",
+      "position": {
+        "x": -3,
+        "y": -1,
+        "z": 4
+      },
+      "semantic_factors": {
+        "assertion": 0.62,
+        "defensiveness": 0.18,
+        "vulnerability": 0.52,
+        "repair": 0.44,
+        "control": 0.54,
+        "empathy": 0.34
+      },
+      "visual_parameters": {
+        "core_intensity": 0.64,
+        "glow_radius": 0.56,
+        "glow_softness": 0.62,
+        "hue_shift": 0.18,
+        "blend_openness": 0.42,
+        "line_opacity": 0.6,
+        "line_stability": 0.72,
+        "line_tension": 0.34
+      },
+      "overlap_state": {
+        "type": "contact_only",
+        "with": ["dad"],
+        "reason": "Mom becomes more legible emotionally, but remains protective and only partly open."
+      }
+    },
+    {
+      "turn": 5,
+      "utterance_id": "t5_teen",
+      "speaker": "teen",
+      "target": ["mom"],
+      "text": "That's fair. We can leave before dark, and I can check the weather with you tonight if you want.",
+      "position": {
+        "x": 1,
+        "y": -3,
+        "z": 4
+      },
+      "semantic_factors": {
+        "assertion": 0.42,
+        "defensiveness": 0.08,
+        "vulnerability": 0.3,
+        "repair": 0.84,
+        "control": 0.08,
+        "empathy": 0.74
+      },
+      "visual_parameters": {
+        "core_intensity": 0.38,
+        "glow_radius": 0.74,
+        "glow_softness": 0.84,
+        "hue_shift": 0.48,
+        "blend_openness": 0.86,
+        "line_opacity": 0.46,
+        "line_stability": 0.66,
+        "line_tension": 0.08
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["mom"],
+        "reason": "Teen explicitly validates Mom's concern and offers concrete accommodation."
+      }
+    },
+    {
+      "turn": 6,
+      "utterance_id": "t6_dad",
+      "speaker": "dad",
+      "target": ["teen", "mom"],
+      "text": "See, that's the kind of stuff we need to hear.",
+      "position": {
+        "x": 1,
+        "y": -3,
+        "z": 5
+      },
+      "semantic_factors": {
+        "assertion": 0.4,
+        "defensiveness": 0.04,
+        "vulnerability": 0.16,
+        "repair": 0.68,
+        "control": 0.22,
+        "empathy": 0.46
+      },
+      "visual_parameters": {
+        "core_intensity": 0.4,
+        "glow_radius": 0.54,
+        "glow_softness": 0.72,
+        "hue_shift": 0.26,
+        "blend_openness": 0.68,
+        "line_opacity": 0.46,
+        "line_stability": 0.64,
+        "line_tension": 0.1
+      },
+      "overlap_state": {
+        "type": "guided_alignment",
+        "with": ["teen", "mom"],
+        "reason": "Dad reinforces the newly shared negotiation pattern."
+      }
+    },
+    {
+      "turn": 6,
+      "utterance_id": "t6_mom",
+      "speaker": "mom",
+      "target": ["teen", "dad"],
+      "text": "I'm still uneasy. I don't want this to turn into one of those situations where everyone says 'it'll be fine' and then nobody has a plan.",
+      "position": {
+        "x": -3,
+        "y": 0,
+        "z": 5
+      },
+      "semantic_factors": {
+        "assertion": 0.56,
+        "defensiveness": 0.14,
+        "vulnerability": 0.58,
+        "repair": 0.28,
+        "control": 0.62,
+        "empathy": 0.2
+      },
+      "visual_parameters": {
+        "core_intensity": 0.64,
+        "glow_radius": 0.5,
+        "glow_softness": 0.54,
+        "hue_shift": 0.1,
+        "blend_openness": 0.28,
+        "line_opacity": 0.58,
+        "line_stability": 0.74,
+        "line_tension": 0.48
+      },
+      "overlap_state": {
+        "type": "tense_collision",
+        "with": ["teen", "dad"],
+        "reason": "Mom remains emotionally exposed but pulls back toward caution and procedural control."
+      }
+    },
+    {
+      "turn": 7,
+      "utterance_id": "t7_teen",
+      "speaker": "teen",
+      "target": ["mom", "dad"],
+      "text": "Okay, then let's make an actual plan. I can share my location, text when we get there, and call before lights out. If anything changes, you pick me up.",
+      "position": {
+        "x": 1,
+        "y": -4,
+        "z": 6
+      },
+      "semantic_factors": {
+        "assertion": 0.48,
+        "defensiveness": 0.06,
+        "vulnerability": 0.4,
+        "repair": 0.92,
+        "control": 0.1,
+        "empathy": 0.8
+      },
+      "visual_parameters": {
+        "core_intensity": 0.42,
+        "glow_radius": 0.82,
+        "glow_softness": 0.9,
+        "hue_shift": 0.54,
+        "blend_openness": 0.92,
+        "line_opacity": 0.48,
+        "line_stability": 0.72,
+        "line_tension": 0.06
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["mom", "dad"],
+        "reason": "Teen actively relinquishes autonomy to build trust, maximizing relational openness."
+      }
+    },
+    {
+      "turn": 7,
+      "utterance_id": "t7_dad",
+      "speaker": "dad",
+      "target": ["teen"],
+      "text": "That sounds reasonable.",
+      "position": {
+        "x": 1,
+        "y": -3,
+        "z": 6
+      },
+      "semantic_factors": {
+        "assertion": 0.24,
+        "defensiveness": 0.02,
+        "vulnerability": 0.14,
+        "repair": 0.62,
+        "control": 0.08,
+        "empathy": 0.5
+      },
+      "visual_parameters": {
+        "core_intensity": 0.24,
+        "glow_radius": 0.52,
+        "glow_softness": 0.76,
+        "hue_shift": 0.28,
+        "blend_openness": 0.7,
+        "line_opacity": 0.3,
+        "line_stability": 0.58,
+        "line_tension": 0.04
+      },
+      "overlap_state": {
+        "type": "guided_alignment",
+        "with": ["teen"],
+        "reason": "Dad confirms the plan and supports the negotiated center."
+      }
+    },
+    {
+      "turn": 7,
+      "utterance_id": "t7_mom",
+      "speaker": "mom",
+      "target": ["teen"],
+      "text": "Maybe. I just need to know you understand why this is a big deal to me.",
+      "position": {
+        "x": -2,
+        "y": -1,
+        "z": 6
+      },
+      "semantic_factors": {
+        "assertion": 0.46,
+        "defensiveness": 0.08,
+        "vulnerability": 0.72,
+        "repair": 0.46,
+        "control": 0.36,
+        "empathy": 0.3
+      },
+      "visual_parameters": {
+        "core_intensity": 0.48,
+        "glow_radius": 0.72,
+        "glow_softness": 0.82,
+        "hue_shift": 0.16,
+        "blend_openness": 0.52,
+        "line_opacity": 0.46,
+        "line_stability": 0.6,
+        "line_tension": 0.22
+      },
+      "overlap_state": {
+        "type": "contact_only",
+        "with": ["teen"],
+        "reason": "Mom asks for emotional understanding; this is open but not yet fully merged."
+      }
+    },
+    {
+      "turn": 8,
+      "utterance_id": "t8_teen",
+      "speaker": "teen",
+      "target": ["mom"],
+      "text": "I do. I know you're not just trying to control me. I know you're worried something could go wrong. I just want a chance to prove I can handle something like this.",
+      "position": {
+        "x": 1,
+        "y": -5,
+        "z": 7
+      },
+      "semantic_factors": {
+        "assertion": 0.38,
+        "defensiveness": 0.04,
+        "vulnerability": 0.78,
+        "repair": 0.96,
+        "control": 0.02,
+        "empathy": 0.96
+      },
+      "visual_parameters": {
+        "core_intensity": 0.34,
+        "glow_radius": 0.94,
+        "glow_softness": 0.98,
+        "hue_shift": 0.72,
+        "blend_openness": 0.98,
+        "line_opacity": 0.42,
+        "line_stability": 0.74,
+        "line_tension": 0.02
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["mom"],
+        "reason": "Major empathy pivot; Teen accurately recognizes Mom's motives and invites trust."
+      }
+    },
+    {
+      "turn": 8,
+      "utterance_id": "t8_mom",
+      "speaker": "mom",
+      "target": ["teen"],
+      "text": "…Okay. That's different from how you were saying it before.",
+      "position": {
+        "x": -1,
+        "y": -3,
+        "z": 7
+      },
+      "semantic_factors": {
+        "assertion": 0.22,
+        "defensiveness": 0.06,
+        "vulnerability": 0.52,
+        "repair": 0.74,
+        "control": 0.12,
+        "empathy": 0.58
+      },
+      "visual_parameters": {
+        "core_intensity": 0.22,
+        "glow_radius": 0.74,
+        "glow_softness": 0.88,
+        "hue_shift": 0.38,
+        "blend_openness": 0.82,
+        "line_opacity": 0.32,
+        "line_stability": 0.54,
+        "line_tension": 0.06
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["teen"],
+        "reason": "Mom crosses the emotional threshold from guarded concern into actual relational receptivity."
+      }
+    },
+    {
+      "turn": 9,
+      "utterance_id": "t9_dad",
+      "speaker": "dad",
+      "target": ["teen", "mom"],
+      "text": "What if we make this a trial run? One night only, no changing locations, and if they don't stick to the plan, no more trips like this for a while.",
+      "position": {
+        "x": 0,
+        "y": -4,
+        "z": 8
+      },
+      "semantic_factors": {
+        "assertion": 0.54,
+        "defensiveness": 0.02,
+        "vulnerability": 0.18,
+        "repair": 0.82,
+        "control": 0.62,
+        "empathy": 0.6
+      },
+      "visual_parameters": {
+        "core_intensity": 0.6,
+        "glow_radius": 0.62,
+        "glow_softness": 0.74,
+        "hue_shift": 0.32,
+        "blend_openness": 0.7,
+        "line_opacity": 0.58,
+        "line_stability": 0.82,
+        "line_tension": 0.18
+      },
+      "overlap_state": {
+        "type": "guided_alignment",
+        "with": ["teen", "mom"],
+        "reason": "Dad creates a structured compromise that both sides can occupy."
+      }
+    },
+    {
+      "turn": 9,
+      "utterance_id": "t9_teen",
+      "speaker": "teen",
+      "target": ["dad", "mom"],
+      "text": "That's fair. I can do that.",
+      "position": {
+        "x": 1,
+        "y": -4,
+        "z": 8
+      },
+      "semantic_factors": {
+        "assertion": 0.32,
+        "defensiveness": 0.02,
+        "vulnerability": 0.22,
+        "repair": 0.84,
+        "control": 0.04,
+        "empathy": 0.68
+      },
+      "visual_parameters": {
+        "core_intensity": 0.28,
+        "glow_radius": 0.68,
+        "glow_softness": 0.84,
+        "hue_shift": 0.42,
+        "blend_openness": 0.88,
+        "line_opacity": 0.36,
+        "line_stability": 0.62,
+        "line_tension": 0.04
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["dad", "mom"],
+        "reason": "Teen accepts conditional structure with very little resistance."
+      }
+    },
+    {
+      "turn": 9,
+      "utterance_id": "t9_mom",
+      "speaker": "mom",
+      "target": ["teen", "dad"],
+      "text": "And I want the sister's number, the campground info, and a check-in when you arrive and before bed.",
+      "position": {
+        "x": -1,
+        "y": -2,
+        "z": 8
+      },
+      "semantic_factors": {
+        "assertion": 0.58,
+        "defensiveness": 0.04,
+        "vulnerability": 0.22,
+        "repair": 0.64,
+        "control": 0.72,
+        "empathy": 0.42
+      },
+      "visual_parameters": {
+        "core_intensity": 0.7,
+        "glow_radius": 0.46,
+        "glow_softness": 0.6,
+        "hue_shift": 0.2,
+        "blend_openness": 0.54,
+        "line_opacity": 0.6,
+        "line_stability": 0.82,
+        "line_tension": 0.24
+      },
+      "overlap_state": {
+        "type": "guided_alignment",
+        "with": ["dad", "teen"],
+        "reason": "Mom shifts from refusal to conditional participation; control remains high but now cooperative."
+      }
+    },
+    {
+      "turn": 10,
+      "utterance_id": "t10_teen",
+      "speaker": "teen",
+      "target": ["mom", "dad"],
+      "text": "Deal. Thank you for actually hearing me out.",
+      "position": {
+        "x": 0,
+        "y": -5,
+        "z": 9
+      },
+      "semantic_factors": {
+        "assertion": 0.18,
+        "defensiveness": 0.0,
+        "vulnerability": 0.36,
+        "repair": 0.92,
+        "control": 0.0,
+        "empathy": 0.78
+      },
+      "visual_parameters": {
+        "core_intensity": 0.16,
+        "glow_radius": 0.8,
+        "glow_softness": 0.94,
+        "hue_shift": 0.48,
+        "blend_openness": 0.94,
+        "line_opacity": 0.26,
+        "line_stability": 0.56,
+        "line_tension": 0.0
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["mom", "dad"],
+        "reason": "Teen closes the loop with gratitude and almost no residual defensiveness."
+      }
+    },
+    {
+      "turn": 10,
+      "utterance_id": "t10_mom",
+      "speaker": "mom",
+      "target": ["teen"],
+      "text": "Thank you for actually talking to us instead of just getting mad.",
+      "position": {
+        "x": 0,
+        "y": -4,
+        "z": 9
+      },
+      "semantic_factors": {
+        "assertion": 0.2,
+        "defensiveness": 0.02,
+        "vulnerability": 0.34,
+        "repair": 0.88,
+        "control": 0.02,
+        "empathy": 0.72
+      },
+      "visual_parameters": {
+        "core_intensity": 0.18,
+        "glow_radius": 0.76,
+        "glow_softness": 0.92,
+        "hue_shift": 0.42,
+        "blend_openness": 0.9,
+        "line_opacity": 0.28,
+        "line_stability": 0.56,
+        "line_tension": 0.02
+      },
+      "overlap_state": {
+        "type": "soft_merge",
+        "with": ["teen"],
+        "reason": "Mom reciprocates repair and acknowledges the changed emotional pattern."
+      }
+    },
+    {
+      "turn": 10,
+      "utterance_id": "t10_dad",
+      "speaker": "dad",
+      "target": ["teen", "mom"],
+      "text": "Great. Nobody's thrilled, everybody's slightly uncomfortable, which probably means this is a decent compromise.",
+      "position": {
+        "x": 0,
+        "y": -3,
+        "z": 9
+      },
+      "semantic_factors": {
+        "assertion": 0.34,
+        "defensiveness": 0.0,
+        "vulnerability": 0.22,
+        "repair": 0.8,
+        "control": 0.16,
+        "empathy": 0.64
+      },
+      "visual_parameters": {
+        "core_intensity": 0.32,
+        "glow_radius": 0.64,
+        "glow_softness": 0.84,
+        "hue_shift": 0.34,
+        "blend_openness": 0.82,
+        "line_opacity": 0.4,
+        "line_stability": 0.68,
+        "line_tension": 0.06
+      },
+      "overlap_state": {
+        "type": "shared_field",
+        "with": ["teen", "mom"],
+        "reason": "Dad names the compromise explicitly, creating a final three-way convergence."
+      }
+    }
+  ],
+  "overlap_state_legend": {
+    "none": "No meaningful relational blending",
+    "contact_only": "Spatial proximity without real emotional merge",
+    "soft_merge": "Open and mutual blending with bridge hues",
+    "guided_alignment": "Mediator-assisted or procedural convergence",
+    "tense_collision": "Contact under remaining tension; compressed overlap",
+    "shared_field": "All speakers converge into a common negotiated zone"
+  }
+}

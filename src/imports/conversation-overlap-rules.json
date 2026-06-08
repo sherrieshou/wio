@@ -1,0 +1,91 @@
+{
+  "overlap_blending_rules": {
+    "name": "Conversation Participant Overlap Rules",
+    "description": "Soft additive color blending rules for overlapping participant glows",
+    "global_rules": {
+      "blend_mode": "screen",
+      "blending_behavior": "soft_merge",
+      "preserve_original_identity": true,
+      "generate_hard_boundary": false,
+      "generate_new_solid_shape": false,
+      "transition_style": "diffused",
+      "saturation_adjustment": -0.08,
+      "lightness_adjustment": 0.06,
+      "opacity_multiplier": 0.9
+    },
+    "pair_rules": [
+      {
+        "pair": ["mom", "teen"],
+        "source_colors": {
+          "mom": ["#4990BF", "#EDDFF7"],
+          "teen": ["#8B7BDA", "#E6B4EA", "#F3EBA5"]
+        },
+        "result_behavior": {
+          "blended_hue_family": "blue_violet_lavender",
+          "dominant_result_colors": ["#8F8AD8", "#C9B2E8", "#EADCF5"],
+          "visual_meaning": "emotional overlap / active exchange / partial mutual recognition",
+          "merge_intensity": 0.7,
+          "edge_softness": 1.0,
+          "notes": [
+            "Blend should lean toward violet and lavender",
+            "Do not produce muddy gray",
+            "Keep the overlap luminous and airy"
+          ]
+        }
+      },
+      {
+        "pair": ["mom", "dad"],
+        "source_colors": {
+          "mom": ["#4990BF", "#EDDFF7"],
+          "dad": ["#B7DCE5", "#F0FFC5", "#D7EBAB"]
+        },
+        "result_behavior": {
+          "blended_hue_family": "cyan_teal_mist",
+          "dominant_result_colors": ["#8CCFD7", "#BCE6D7", "#DDF1E0"],
+          "visual_meaning": "alignment / calming influence / cooperative stability",
+          "merge_intensity": 0.6,
+          "edge_softness": 1.0,
+          "notes": [
+            "Blend should feel cool and calming",
+            "Bias toward cyan-teal instead of neutral gray",
+            "Keep overlap subtle and low-contrast"
+          ]
+        }
+      },
+      {
+        "pair": ["teen", "dad"],
+        "source_colors": {
+          "teen": ["#8B7BDA", "#E6B4EA", "#F3EBA5"],
+          "dad": ["#B7DCE5", "#F0FFC5", "#D7EBAB"]
+        },
+        "result_behavior": {
+          "blended_hue_family": "pastel_yellow_green_light_lime",
+          "dominant_result_colors": ["#E5EEB0", "#DDF0B9", "#CFE7BA"],
+          "visual_meaning": "negotiation / soft compromise / warming connection",
+          "merge_intensity": 0.65,
+          "edge_softness": 1.0,
+          "notes": [
+            "Blend should lean warm pastel instead of strong green",
+            "Keep the overlap soft and slightly glowing",
+            "Avoid over-saturating the yellow"
+          ]
+        }
+      }
+    ],
+    "multi_overlap_rule": {
+      "participants": ["mom", "teen", "dad"],
+      "result_behavior": {
+        "blended_hue_family": "pale_spectral_mist",
+        "dominant_result_colors": ["#D8DFF2", "#E6E7C8", "#E4D7EE"],
+        "visual_meaning": "shared conversational field / temporary mutual engagement",
+        "merge_intensity": 0.55,
+        "edge_softness": 1.0,
+        "notes": [
+          "When all three overlap, do not create a muddy neutral center",
+          "Keep the field luminous, pale, and atmospheric",
+          "The result should feel like layered light rather than mixed paint"
+        ]
+      }
+    }
+  }
+}

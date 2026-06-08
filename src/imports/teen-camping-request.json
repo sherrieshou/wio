@@ -1,0 +1,376 @@
+Conversation 1:
+{
+  "turns": [
+    {
+      "turn": 1,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "Mom, I want to go camping this weekend with my friends. We already picked the site. It's just one night.",
+          "radius": 18,
+
+        },
+        {
+          "speaker": "MOM",
+          "text": "No, absolutely not. A bunch of teenagers going camping without adults? I'm not okay with that.",
+          "radius": 38,
+
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "It's not like I just brought it up. I mentioned it last week. You just didn't take it seriously.",
+          "radius": 30,
+
+        },
+        {
+          "speaker": "MOM",
+          "text": "You 'mentioned it' in passing. That's not the same as actually talking it through.",
+          "radius": 28,
+  
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "It's a real campground, not just some random woods. It's like two hours away, there are staff there, and we'll have cell service.",
+          "radius": 22,
+
+        },
+        {
+          "speaker": "DAD",
+          "text": "Who's driving? Whose car? And is any parent going with you?",
+          "radius": 18,
+
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "No parent is going, but we're in high school, not little kids. We can handle one night.",
+          "radius": 28,
+
+        },
+        {
+          "speaker": "MOM",
+          "text": "That's exactly the problem. No adults, overnight, out in the middle of nowhere? If something happens, then what?",
+          "radius": 36,
+
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "Why do you always assume something bad is going to happen? Other parents are letting their kids go.",
+          "radius": 36,
+       
+        },
+        {
+          "speaker": "MOM",
+          "text": "I don't care what other parents are doing. I'm responsible for you, not them.",
+          "radius": 32,
+       
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "This is why I never ask for anything. You always say you trust me, but the second I want any freedom, it's automatically no.",
+          "radius": 44,
+         
+        },
+        {
+          "speaker": "DAD",
+          "text": "Trust has nothing to do with it. This is about safety. You're acting like we're ruining your life over one camping trip.",
+          "radius": 34,
+   
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "Because you are! You act like I can't do anything on my own. I'm old enough to hang out with my friends for one night without you hovering over everything.",
+          "radius": 48,
+         
+        },
+        {
+          "speaker": "MOM",
+          "text": "We are not hovering. We are being parents. There's a difference.",
+          "radius": 30,
+          
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "No, you just want control over everything. Who I go with, where I go, when I come home — it's always something.",
+          "radius": 46,
+     
+        },
+        {
+          "speaker": "MOM",
+          "text": "And you only see the fun part. I'm thinking about weather, driving at night, people making stupid decisions, and nobody there to step in if things go wrong.",
+          "radius": 40,
+        
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "You don't actually listen to me. You already decided no before I even explained anything.",
+          "radius": 42,
+      
+        },
+        {
+          "speaker": "DAD",
+          "text": "Because from what you've explained, it still sounds like a bad idea. If there were adults going, that would be different.",
+          "radius": 26,
+        
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "So basically the answer was never going to be yes.",
+          "radius": 38,
+      
+        },
+        {
+          "speaker": "MOM",
+          "text": "Not for this trip, no.",
+          "radius": 20,
+       
+        },
+        {
+          "speaker": "TEEN",
+          "text": "Fine. Next time I won't even bother asking.",
+          "radius": 44,
+        
+        }
+      ]
+    }
+  ]
+}
+
+
+Conversation 2: 
+{
+  "turns": [
+    {
+      "turn": 1,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "Mom, I want to go camping this weekend with my friends. We already picked the site. It's just one night.",
+          "radius": 18,
+         
+        },
+        {
+          "speaker": "MOM",
+          "text": "I really don't love the idea. A group of teenagers going without adults makes me nervous.",
+          "radius": 28,
+       
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "I get why you're worried, but it's an actual campground, not just random woods. There are staff there, and we'll have cell service.",
+          "radius": 20,
+      
+        },
+        {
+          "speaker": "DAD",
+          "text": "Okay, slow down. Who exactly is going, and how are you getting there?",
+          "radius": 15,
+        
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "Me, Evan, Lucas, and Maya. Evan's older sister is driving us there, and her mom knows the plan.",
+          "radius": 16,
+        
+        },
+        {
+          "speaker": "MOM",
+          "text": "That's better than I thought, but I still don't like that no parent is staying overnight.",
+          "radius": 24,
+         
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "I know, but we're not trying to do anything reckless. I can send you the campsite link, our schedule, and everyone's numbers.",
+          "radius": 22,
+        
+        },
+        {
+          "speaker": "DAD",
+          "text": "That actually helps. If we had the location and contact info, I'd feel a lot better.",
+          "radius": 20,
+        
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "nodes": [
+        {
+          "speaker": "MOM",
+          "text": "My issue isn't that I think you're irresponsible. I'm thinking about weather, driving at night, and what happens if someone makes a dumb decision.",
+          "radius": 36,
+        
+        },
+        {
+          "speaker": "TEEN",
+          "text": "That's fair. We can leave before dark, and I can check the weather with you tonight if you want.",
+          "radius": 26,
+       
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "nodes": [
+        {
+          "speaker": "DAD",
+          "text": "See, that's the kind of stuff we need to hear.",
+          "radius": 16,
+          
+        },
+        {
+          "speaker": "MOM",
+          "text": "I'm still uneasy. I don't want this to turn into one of those situations where everyone says 'it'll be fine' and then nobody has a plan.",
+          "radius": 34,
+          
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "Okay, then let's make an actual plan. I can share my location, text when we get there, and call before lights out. If anything changes, you pick me up.",
+          "radius": 32,
+         
+        },
+        {
+          "speaker": "DAD",
+          "text": "That sounds reasonable.",
+          "radius": 12,
+          
+        },
+        {
+          "speaker": "MOM",
+          "text": "Maybe. I just need to know you understand why this is a big deal to me.",
+          "radius": 38,
+         
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "I do. I know you're not just trying to control me. I know you're worried something could go wrong. I just want a chance to prove I can handle something like this.",
+          "radius": 42,
+       
+        },
+        {
+          "speaker": "MOM",
+          "text": "…Okay. That's different from how you were saying it before.",
+          "radius": 35,
+          
+        }
+      ]
+    },
+    {
+      "turn": 9,
+      "nodes": [
+        {
+          "speaker": "DAD",
+          "text": "What if we make this a trial run? One night only, no changing locations, and if they don't stick to the plan, no more trips like this for a while.",
+          "radius": 28,
+         
+        },
+        {
+          "speaker": "TEEN",
+          "text": "That's fair. I can do that.",
+          "radius": 16,
+          
+        },
+        {
+          "speaker": "MOM",
+          "text": "And I want the sister's number, the campground info, and a check-in when you arrive and before bed.",
+          "radius": 22,
+        
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "nodes": [
+        {
+          "speaker": "TEEN",
+          "text": "Deal. Thank you for actually hearing me out.",
+          "radius": 24,
+       
+        },
+        {
+          "speaker": "MOM",
+          "text": "Thank you for actually talking to us instead of just getting mad.",
+          "radius": 26,
+        
+        },
+        {
+          "speaker": "DAD",
+          "text": "Great. Nobody's thrilled, everybody's slightly uncomfortable, which probably means this is a decent compromise.",
+          "radius": 20,
+        
+        }
+      ]
+    }
+  ]
+}

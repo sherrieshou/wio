@@ -1,0 +1,122 @@
+{
+  "axis_annotation_system": {
+    "description": "A hybrid axis labeling system for a 3D semantic plot that keeps semantic endpoint labels readable under zoom, pan, and rotation, while preserving the feeling that the labels belong to the 3D axes.",
+    "axis_letters": {
+      "enabled": true,
+      "labels": {
+        "x": "X",
+        "y": "Y",
+        "z": "Z"
+      },
+      "role": "secondary directional markers",
+      "style": {
+        "size_scale": 0.55,
+        "opacity": 0.4,
+        "weight": "light",
+        "tone": "subtle"
+      },
+      "description": "Keep X, Y, and Z visible as small, low-priority directional markers only."
+    },
+    "semantic_endpoint_labels": {
+      "enabled": true,
+      "mode": "endpoint labeling",
+      "labels": {
+        "x_axis": {
+          "negative_end": "Protection",
+          "positive_end": "Autonomy"
+        },
+        "y_axis": {
+          "negative_end": "Negotiation",
+          "positive_end": "Confrontation"
+        },
+        "z_axis": {
+          "positive_end": "Time"
+        }
+      },
+      "priority": "primary",
+      "description": "Show semantic meaning at the ends of the axes instead of relying on X, Y, Z alone."
+    },
+    "arrow_behavior": {
+      "x_axis": {
+        "arrow_style": "double-headed",
+        "description": "The x-axis is a bidirectional semantic continuum."
+      },
+      "y_axis": {
+        "arrow_style": "double-headed",
+        "description": "The y-axis is a bidirectional semantic continuum."
+      },
+      "z_axis": {
+        "arrow_style": "single-headed",
+        "description": "The z-axis indicates forward time progression."
+      }
+    },
+    "placement": {
+      "follow_projected_axis_endpoints": true,
+      "camera_readable": true,
+      "camera_facing_text": true,
+      "axis_offset_px": 12,
+      "description": "Semantic endpoint labels should be positioned near the projected ends of the axes, slightly offset from the axis lines, and remain readable from the active camera view."
+    },
+    "screen_edge_clamp": {
+      "enabled": true,
+      "margin_px": 48,
+      "left_limit": 48,
+      "top_limit": 48,
+      "right_limit": "viewport_width - 48",
+      "bottom_limit": "viewport_height - 48",
+      "description": "Clamp endpoint labels to a safe screen margin so they remain visible even when the projected axis endpoints move outside the visible frame."
+    },
+    "overflow_behavior": {
+      "mode": "pin_to_nearest_safe_edge",
+      "description": "If a projected endpoint would place the label outside the screen, pin the label to the nearest valid edge position inside the safe margin."
+    },
+    "leader_cue_behavior": {
+      "enabled": true,
+      "show_only_when_clamped": true,
+      "style": {
+        "type": "subtle_leader_cue",
+        "weight": "very light",
+        "opacity": 0.3,
+        "length_px": 18
+      },
+      "description": "When an endpoint label is clamped to the screen edge, show a faint leader cue or directional indicator to preserve the relationship between the label and the off-screen axis endpoint."
+    },
+    "hover_interaction": {
+      "enabled": true,
+      "behavior": {
+        "hover_on_label_highlights_corresponding_axis": true,
+        "hover_on_axis_highlights_corresponding_label": true
+      },
+      "highlight_style": {
+        "axis_brightness_boost": 1.15,
+        "label_opacity_boost": 1.0,
+        "other_axes_dim": 0.75
+      },
+      "description": "Support reciprocal highlighting between axis labels and the corresponding 3D axes."
+    },
+    "readability_rules": {
+      "zoom_responsive": true,
+      "rotation_readable": true,
+      "avoid_occlusion_when_possible": true,
+      "description": "Labels should remain readable across view changes and should not disappear simply because the camera zooms or rotates."
+    },
+    "visual_style": {
+      "overall_tone": "minimal, elegant, integrated with the plot",
+      "semantic_labels": {
+        "weight": "regular",
+        "opacity": 0.85,
+        "contrast": "medium"
+      },
+      "axis_letters": {
+        "weight": "light",
+        "opacity": 0.4,
+        "contrast": "low"
+      },
+      "leader_cues": {
+        "opacity": 0.3,
+        "weight": "thin"
+      }
+    },
+    "design_intent": "The axis annotation system should make semantic meaning immediately legible while preserving the spatial character of the 3D plot. Full semantic labels should feel attached to the axes, but never become unreadable or leave the visible screen."
+  }
+}

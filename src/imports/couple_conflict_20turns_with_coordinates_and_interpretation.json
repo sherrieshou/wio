@@ -1,0 +1,533 @@
+{
+  "scenario": {
+    "title": "Couple conflict about canceled dinner, delayed replies, and feeling ignored",
+    "summary": "A and B argue after B cancels dinner and replies coldly. The conflict oscillates between accusation, defensiveness, vulnerability, and repair."
+  },
+  "axes": {
+    "x": {
+      "name": "Closeness ↔ Distance",
+      "positive_5": "strongest closeness",
+      "zero": "neutral or mixed",
+      "negative_5": "strongest distance"
+    },
+    "y": {
+      "name": "Repair ↔ Attack",
+      "negative_5": "strongest repair",
+      "zero": "neutral or mixed",
+      "positive_5": "strongest attack"
+    },
+    "z": {
+      "name": "Time",
+      "rule": "Each turn increases z by 1",
+      "start_value": 0
+    }
+  },
+  "overall_interpretation": {
+    "relationship_pattern": "This conversation is unstable and oscillatory rather than cleanly polarized. Both speakers move back and forth between closeness and distance, and between repair and attack.",
+    "visual_expectation": "The trajectories should look more tangled and woven than the parent-child scenario, with the messiest section around turns 10 to 14, followed by gradual convergence in turns 15 to 20.",
+    "phase_summary": [
+      {
+        "phase": "Turns 1-4",
+        "meaning": "Initial complaint and defensiveness. Both speakers stay in a distant, attacking zone."
+      },
+      {
+        "phase": "Turns 5-8",
+        "meaning": "Hurt starts surfacing beneath blame. The trajectories begin to oscillate more visibly."
+      },
+      {
+        "phase": "Turn 9",
+        "meaning": "First major repair moment. Both speakers briefly align in closeness and repair."
+      },
+      {
+        "phase": "Turns 10-14",
+        "meaning": "Strong rebound into conflict. This is the most chaotic and visually tangled segment."
+      },
+      {
+        "phase": "Turns 15-20",
+        "meaning": "The argument shifts into more honest vulnerability and practical repair. The trajectories converge but do not flatten completely."
+      }
+    ]
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "dialogue": {
+        "A": "Are you seriously canceling on me again tonight?",
+        "B": "I’m not “canceling on you.” I told you work ran late."
+      },
+      "coordinates": {
+        "A": {
+          "x": -3.2,
+          "y": 3.0,
+          "z": 0
+        },
+        "B": {
+          "x": -2.4,
+          "y": 2.2,
+          "z": 0
+        }
+      },
+      "interpretation": {
+        "A": "A opens with accusation and frustration, which pushes the conversation toward distance and attack.",
+        "B": "B responds defensively by correcting the framing instead of acknowledging the hurt, staying distant and mildly attacking.",
+        "turn_meaning": "The conflict begins in a defensive posture rather than a vulnerable one, so the two trajectories start in the upper-left conflict zone."
+      }
+    },
+    {
+      "turn": 2,
+      "dialogue": {
+        "A": "You sent one dry text an hour after we were supposed to meet.",
+        "B": "Because I was busy, not because I was trying to disrespect you."
+      },
+      "coordinates": {
+        "A": {
+          "x": -3.4,
+          "y": 3.1,
+          "z": 1
+        },
+        "B": {
+          "x": -1.6,
+          "y": 1.4,
+          "z": 1
+        }
+      },
+      "interpretation": {
+        "A": "A continues pressing the evidence of neglect, which keeps the tone critical and distant.",
+        "B": "B begins to explain intention rather than only reject blame, which reduces attack slightly but is still more defensive than connective.",
+        "turn_meaning": "The trajectories separate a bit: A stays high-attack and distant, while B moves slightly toward the center without becoming truly reparative."
+      }
+    },
+    {
+      "turn": 3,
+      "dialogue": {
+        "A": "It doesn’t feel like that. It feels like I’m always the thing that gets pushed aside.",
+        "B": "That’s not fair. You act like one bad night means I don’t care about you at all."
+      },
+      "coordinates": {
+        "A": {
+          "x": -0.6,
+          "y": 2.2,
+          "z": 2
+        },
+        "B": {
+          "x": -2.0,
+          "y": 2.0,
+          "z": 2
+        }
+      },
+      "interpretation": {
+        "A": "A starts naming the underlying hurt, which moves slightly toward closeness even though the tone is still charged.",
+        "B": "B remains defensive and rejects A’s interpretation, preserving distance.",
+        "turn_meaning": "This is the first partial shift toward emotional honesty from A, but B does not fully meet it, so the lines move unevenly."
+      }
+    },
+    {
+      "turn": 4,
+      "dialogue": {
+        "A": "It’s not one bad night though. It’s the same pattern every time you get stressed.",
+        "B": "And every time I get stressed, you make it about the relationship instead of what I’m dealing with."
+      },
+      "coordinates": {
+        "A": {
+          "x": -3.0,
+          "y": 3.2,
+          "z": 3
+        },
+        "B": {
+          "x": -3.1,
+          "y": 3.0,
+          "z": 3
+        }
+      },
+      "interpretation": {
+        "A": "A escalates from the event to a pattern judgment, which pushes the exchange back toward attack and distance.",
+        "B": "B mirrors that pattern logic and blames A for relational escalation, moving into nearly the same conflict position as A.",
+        "turn_meaning": "Both speakers align in a mutually attacking zone. Visually this creates a brief near-parallel conflict alignment."
+      }
+    },
+    {
+      "turn": 5,
+      "dialogue": {
+        "A": "Because I’m in the relationship too. I don’t just disappear because you’re overwhelmed.",
+        "B": "I’m not asking you to disappear. I’m asking you not to make everything heavier the second I’m already drowning."
+      },
+      "coordinates": {
+        "A": {
+          "x": 0.4,
+          "y": 2.1,
+          "z": 4
+        },
+        "B": {
+          "x": 0.8,
+          "y": 1.3,
+          "z": 4
+        }
+      },
+      "interpretation": {
+        "A": "A moves toward the center by reframing the issue as participation in the relationship, though the phrasing still contains blame.",
+        "B": "B reveals stress and overwhelm, which brings some closeness into the exchange even while staying defensive.",
+        "turn_meaning": "Both trajectories bend inward. This is not repair yet, but the conversation is no longer only about accusation."
+      }
+    },
+    {
+      "turn": 6,
+      "dialogue": {
+        "A": "See? That’s exactly it. The second I tell you I’m hurt, you act like I’m a burden.",
+        "B": "I didn’t say you were a burden. I said your timing is awful."
+      },
+      "coordinates": {
+        "A": {
+          "x": 1.2,
+          "y": 2.8,
+          "z": 5
+        },
+        "B": {
+          "x": -2.2,
+          "y": 2.6,
+          "z": 5
+        }
+      },
+      "interpretation": {
+        "A": "A is trying to voice hurt more directly, but still does it through accusation, creating a mixed closeness-attack position.",
+        "B": "B snaps back into distance by criticizing A’s timing instead of acknowledging the hurt.",
+        "turn_meaning": "This turn creates a strong split: A leans toward emotional exposure, B recoils into attack. Visually, the trajectories diverge sharply."
+      }
+    },
+    {
+      "turn": 7,
+      "dialogue": {
+        "A": "Wow. Okay. So now there’s a “right time” for me to have feelings?",
+        "B": "Don’t twist what I said. I’m saying I needed understanding for one night."
+      },
+      "coordinates": {
+        "A": {
+          "x": -2.4,
+          "y": 3.8,
+          "z": 6
+        },
+        "B": {
+          "x": 1.0,
+          "y": 1.2,
+          "z": 6
+        }
+      },
+      "interpretation": {
+        "A": "A swings back into sarcasm and attack, increasing distance again.",
+        "B": "B still defends but now names a need for understanding, which moves closer than A.",
+        "turn_meaning": "The speakers cross emotionally: A retreats into attack while B briefly reaches toward explanation. This is an important woven crossover moment."
+      }
+    },
+    {
+      "turn": 8,
+      "dialogue": {
+        "A": "I have been understanding. I’m just tired of pretending it doesn’t affect me.",
+        "B": "And I’m tired of feeling like I’m being graded every time I mess something up."
+      },
+      "coordinates": {
+        "A": {
+          "x": 2.0,
+          "y": -0.6,
+          "z": 7
+        },
+        "B": {
+          "x": 1.8,
+          "y": 0.8,
+          "z": 7
+        }
+      },
+      "interpretation": {
+        "A": "A shifts into a much more honest expression of impact, which increases closeness and lowers attack substantially.",
+        "B": "B also names a recurring emotional experience, but still wraps it in some defensiveness.",
+        "turn_meaning": "Both trajectories move inward. This is the first real softening, though the two are not yet fully aligned."
+      }
+    },
+    {
+      "turn": 9,
+      "dialogue": {
+        "A": "This isn’t about grading you. I wanted one dinner with you that actually felt important.",
+        "B": "It is important. You are important. I just couldn’t do tonight."
+      },
+      "coordinates": {
+        "A": {
+          "x": 3.8,
+          "y": -2.8,
+          "z": 8
+        },
+        "B": {
+          "x": 3.6,
+          "y": -2.6,
+          "z": 8
+        }
+      },
+      "interpretation": {
+        "A": "A is direct about the need beneath the argument: wanting to feel important. This is strongly connective and reparative.",
+        "B": "B validates A explicitly for the first time and stays in a similarly reparative zone.",
+        "turn_meaning": "This is the first major repair alignment. Visually, the two trajectories come very close together in a calm zone."
+      }
+    },
+    {
+      "turn": 10,
+      "dialogue": {
+        "A": "Then why didn’t you call? Why do I always get the bare minimum version of you when things get hard?",
+        "B": "Because if I called, it would’ve turned into exactly this."
+      },
+      "coordinates": {
+        "A": {
+          "x": -2.6,
+          "y": 3.9,
+          "z": 9
+        },
+        "B": {
+          "x": -2.2,
+          "y": 2.8,
+          "z": 9
+        }
+      },
+      "interpretation": {
+        "A": "A rebounds sharply into attack, triggered by the remaining unmet need.",
+        "B": "B also moves back toward distance by framing the conflict itself as the reason for avoidance.",
+        "turn_meaning": "This is the major relapse after repair. Both lines snap back upward into conflict, creating a strong visual break."
+      }
+    },
+    {
+      "turn": 11,
+      "dialogue": {
+        "A": "That’s such a coward answer. You avoided me because you didn’t want to deal with my reaction.",
+        "B": "I avoided a fight, yeah. Because lately every conversation turns into one."
+      },
+      "coordinates": {
+        "A": {
+          "x": -4.2,
+          "y": 4.8,
+          "z": 10
+        },
+        "B": {
+          "x": -3.6,
+          "y": 4.1,
+          "z": 10
+        }
+      },
+      "interpretation": {
+        "A": "A reaches one of the most attacking and distant positions in the conversation by labeling B’s behavior as cowardly.",
+        "B": "B stays in a highly defensive and blaming posture, reinforcing distance.",
+        "turn_meaning": "This is one of the most extreme conflict peaks. Visually, it should read as a dense high-tension segment."
+      }
+    },
+    {
+      "turn": 12,
+      "dialogue": {
+        "A": "Maybe because I keep feeling like I have to beg for basic consideration.",
+        "B": "And maybe because no matter what I do, you only remember the part where I failed."
+      },
+      "coordinates": {
+        "A": {
+          "x": -0.4,
+          "y": 2.7,
+          "z": 11
+        },
+        "B": {
+          "x": 0.2,
+          "y": 2.0,
+          "z": 11
+        }
+      },
+      "interpretation": {
+        "A": "A speaks from hurt more than pure accusation, moving back toward the center.",
+        "B": "B also expresses hurt and discouragement rather than only counterattacking.",
+        "turn_meaning": "Both trajectories are still elevated in conflict, but they move inward. This is a hurt-laden midpoint rather than a clean attack."
+      }
+    },
+    {
+      "turn": 13,
+      "dialogue": {
+        "A": "That’s not true. I notice what you do. I just don’t know why it’s so hard for you to show up when I actually need you.",
+        "B": "I do show up. Just not always in the exact way you want."
+      },
+      "coordinates": {
+        "A": {
+          "x": 1.8,
+          "y": 0.2,
+          "z": 12
+        },
+        "B": {
+          "x": 1.2,
+          "y": 0.8,
+          "z": 12
+        }
+      },
+      "interpretation": {
+        "A": "A corrects the previous absolutism and becomes more specific, which lowers attack and increases closeness.",
+        "B": "B remains somewhat defensive but is no longer fully distant or hostile.",
+        "turn_meaning": "This is a transitional smoothing turn. The trajectories settle toward the center but still retain some tension."
+      }
+    },
+    {
+      "turn": 14,
+      "dialogue": {
+        "A": "You know what? Maybe we just need completely different things from each other.",
+        "B": "Don’t do that. Don’t jump straight from one argument to “maybe we’re wrong for each other.”"
+      },
+      "coordinates": {
+        "A": {
+          "x": -4.6,
+          "y": 2.9,
+          "z": 13
+        },
+        "B": {
+          "x": 2.6,
+          "y": -0.8,
+          "z": 13
+        }
+      },
+      "interpretation": {
+        "A": "A abruptly jumps to relationship-level withdrawal, creating one of the strongest distance moves in the conversation.",
+        "B": "B responds by actively trying to prevent rupture, which is relatively close and reparative.",
+        "turn_meaning": "This is the strongest divergence turn. One partner pulls far away while the other reaches back in, creating maximum visual tension."
+      }
+    },
+    {
+      "turn": 15,
+      "dialogue": {
+        "A": "I’m not trying to be dramatic. I’m saying I feel lonely even when I’m with you sometimes.",
+        "B": "…Okay. That I can hear. That’s different."
+      },
+      "coordinates": {
+        "A": {
+          "x": 3.6,
+          "y": -3.8,
+          "z": 14
+        },
+        "B": {
+          "x": 3.4,
+          "y": -3.0,
+          "z": 14
+        }
+      },
+      "interpretation": {
+        "A": "A drops the rupture move and names the underlying loneliness directly, becoming strongly close and reparative.",
+        "B": "B finally receives the deeper feeling without deflecting, moving into repair as well.",
+        "turn_meaning": "This is the true turning point. The trajectories swing dramatically back together into a repair zone."
+      }
+    },
+    {
+      "turn": 16,
+      "dialogue": {
+        "A": "Different how?",
+        "B": "Because that’s you telling me what’s actually underneath the anger instead of just coming at me."
+      },
+      "coordinates": {
+        "A": {
+          "x": 3.0,
+          "y": -3.0,
+          "z": 15
+        },
+        "B": {
+          "x": 3.8,
+          "y": -3.6,
+          "z": 15
+        }
+      },
+      "interpretation": {
+        "A": "A stays engaged and curious rather than reactive, which keeps the conversation in a close reparative space.",
+        "B": "B offers meta-understanding and rewards vulnerability, moving even deeper into repair.",
+        "turn_meaning": "This turn stabilizes the repair turn from 15. Visually, the paths stay near one another with a softer, calmer contour."
+      }
+    },
+    {
+      "turn": 17,
+      "dialogue": {
+        "A": "Fine. Underneath the anger, I feel stupid for caring this much when I’m not sure you care the same way back.",
+        "B": "I do care. I think I just shut down when I feel like I’m already failing."
+      },
+      "coordinates": {
+        "A": {
+          "x": 4.6,
+          "y": -4.2,
+          "z": 16
+        },
+        "B": {
+          "x": 4.4,
+          "y": -4.0,
+          "z": 16
+        }
+      },
+      "interpretation": {
+        "A": "A reaches one of the strongest closeness and repair positions by exposing insecurity directly.",
+        "B": "B matches that vulnerability with self-explanation rather than self-protection.",
+        "turn_meaning": "This is one of the deepest mutual-repair points in the conversation. The lines should almost overlap here."
+      }
+    },
+    {
+      "turn": 18,
+      "dialogue": {
+        "A": "Then tell me that instead of disappearing. I can handle tired. I can handle overwhelmed. I can’t handle silence.",
+        "B": "That’s fair. And I need you not to assume the worst version of me every time I mess up."
+      },
+      "coordinates": {
+        "A": {
+          "x": 4.0,
+          "y": -3.2,
+          "z": 17
+        },
+        "B": {
+          "x": 4.1,
+          "y": -3.7,
+          "z": 17
+        }
+      },
+      "interpretation": {
+        "A": "A stays close but adds a clear relational boundary and specific need.",
+        "B": "B responds with reciprocity rather than defensiveness, still within repair.",
+        "turn_meaning": "The repair becomes practical here: both speakers are now negotiating how to do better next time."
+      }
+    },
+    {
+      "turn": 19,
+      "dialogue": {
+        "A": "I can try that. But I need more than “I’m busy.” I need something that actually sounds like you still see me.",
+        "B": "Okay. Next time I call, even if it’s short. And I don’t cancel without actually talking to you."
+      },
+      "coordinates": {
+        "A": {
+          "x": 4.2,
+          "y": -4.1,
+          "z": 18
+        },
+        "B": {
+          "x": 4.0,
+          "y": -4.6,
+          "z": 18
+        }
+      },
+      "interpretation": {
+        "A": "A remains highly connective while making a precise emotional request.",
+        "B": "B offers a concrete behavioral repair plan, making this one of the strongest repair turns.",
+        "turn_meaning": "This is the most solution-oriented moment. The trajectories remain close and deeply reparative."
+      }
+    },
+    {
+      "turn": 20,
+      "dialogue": {
+        "A": "Okay. I’m still mad, but I feel better than I did twenty minutes ago.",
+        "B": "Same. Can we try again tomorrow? Properly this time?"
+      },
+      "coordinates": {
+        "A": {
+          "x": 3.4,
+          "y": -3.8,
+          "z": 19
+        },
+        "B": {
+          "x": 4.0,
+          "y": -4.0,
+          "z": 19
+        }
+      },
+      "interpretation": {
+        "A": "A does not pretend full resolution, but acknowledges meaningful repair and stays close.",
+        "B": "B closes with a forward-looking repair move, suggesting continuation rather than rupture.",
+        "turn_meaning": "The final state is close and reparative, but still realistic. The trajectories should end near each other, not perfectly flattened."
+      }
+    }
+  ]
+}

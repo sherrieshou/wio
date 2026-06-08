@@ -1,0 +1,53 @@
+{
+  "dad_color_system": {
+    "name": "Dad Glow",
+    "description": "Soft atmospheric glow for Dad participant points",
+
+    "colors": {
+      "center": "#B7DCE5",
+      "middle_glow": "#F0FFC5",
+      "outer_glow": "#D7EBAB",
+      "transparent_edge": "rgba(215,235,171,0)"
+    },
+
+    "gradient": {
+      "type": "radial",
+      "stops": [
+        {
+          "color": "#B7DCE5",
+          "position": 0.0,
+          "opacity": 0.9
+        },
+        {
+          "color": "#B7DCE5",
+          "position": 0.25,
+          "opacity": 0.7
+        },
+        {
+          "color": "#F0FFC5",
+          "position": 0.5,
+          "opacity": 0.6
+        },
+        {
+          "color": "#D7EBAB",
+          "position": 0.75,
+          "opacity": 0.35
+        },
+        {
+          "color": "#D7EBAB",
+          "position": 1.0,
+          "opacity": 0
+        }
+      ]
+    },
+
+    "visual_effects": {
+      "blur_radius_px": {
+        "min": 100,
+        "max": 140
+      },
+      "blend_mode": "screen",
+      "edge_behavior": "dissolve_to_transparency"
+    }
+  }
+}

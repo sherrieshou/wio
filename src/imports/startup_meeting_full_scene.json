@@ -1,0 +1,545 @@
+{
+  "scenario": {
+    "title": "Startup product meeting about launching AI Speaking Partner",
+    "background": {
+      "startup_product": "A consumer language learning app focused on daily practice, speaking confidence, vocabulary building, and lightweight habit formation.",
+      "feature_under_debate": "AI Speaking Partner",
+      "feature_description": "A real-time AI conversation partner that lets users practice speaking in everyday scenarios, receive feedback, get corrected phrasing, and review mistakes after the session.",
+      "meeting_question": "Should the team launch a scoped version of AI Speaking Partner next month, even though the conversation quality, correction quality, and latency are still inconsistent?",
+      "goal_of_this_scene": "Show how multiple stakeholders in a startup product meeting occupy different semantic positions, form temporary alignments, and gradually move toward a shared but not identical decision."
+    },
+    "stakeholders": [
+      {
+        "name": "Maya",
+        "role": "Founder / CEO",
+        "default_tendency": "Vision + short-term pressure"
+      },
+      {
+        "name": "Daniel",
+        "role": "Product Manager",
+        "default_tendency": "Bridge / compromise / scope framing"
+      },
+      {
+        "name": "Serena",
+        "role": "Design Lead",
+        "default_tendency": "Vision + long-term trust / emotional experience"
+      },
+      {
+        "name": "Alex",
+        "role": "Engineering Lead",
+        "default_tendency": "Execution + long-term system stability"
+      },
+      {
+        "name": "Priya",
+        "role": "Learning Content Lead",
+        "default_tendency": "Execution + long-term pedagogical integrity"
+      },
+      {
+        "name": "Leo",
+        "role": "Growth Lead",
+        "default_tendency": "Vision + short-term launch momentum"
+      },
+      {
+        "name": "Nina",
+        "role": "Customer Support Lead",
+        "default_tendency": "Execution + short-term user pain / support burden"
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "name": "Short-term Pressure ↔ Long-term Direction",
+      "negative_5": "strongest short-term pressure",
+      "zero": "balanced",
+      "positive_5": "strongest long-term direction"
+    },
+    "y": {
+      "name": "Vision ↔ Execution",
+      "positive_5": "strongest vision",
+      "zero": "balanced",
+      "negative_5": "strongest execution"
+    },
+    "z": {
+      "name": "Time",
+      "rule": "Each round increases z by 1",
+      "start_value": 0
+    }
+  },
+  "overall_interpretation": {
+    "relationship_pattern": "This is not a polarized two-sided conflict. It is a multi-stakeholder negotiation field in which different roles cluster around different priorities and gradually move toward a workable shared slice.",
+    "visual_expectation": "The trajectories should begin dispersed across the semantic field, show strong cross-functional tension in the middle rounds, and then partially converge into a loose final cluster without fully collapsing into one point.",
+    "ending_shape": "Alignment without uniformity. By the end, the stakeholders are closer together, but still retain role-specific differences.",
+    "phase_summary": [
+      {
+        "phase": "Rounds 1-3",
+        "meaning": "Initial framing. Vision, execution, and launch urgency are clearly separated."
+      },
+      {
+        "phase": "Rounds 4-6",
+        "meaning": "Tension intensifies. Support, design, learning, growth, and engineering articulate the strongest trade-offs."
+      },
+      {
+        "phase": "Rounds 7-8",
+        "meaning": "A scoped compromise begins to emerge, but real disagreement remains."
+      },
+      {
+        "phase": "Rounds 9-10",
+        "meaning": "The team converges around a narrower, more responsible launch slice."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "dialogue": [
+        {
+          "speaker": "Maya",
+          "role": "Founder / CEO",
+          "text": "I really think this is the feature people will associate us with. If we keep waiting until it feels perfect, we’re going to miss the window."
+        },
+        {
+          "speaker": "Alex",
+          "role": "Engineering Lead",
+          "text": "I get the urgency, but right now it only feels magical in the best-case demo. In normal use, it’s still pretty fragile."
+        },
+        {
+          "speaker": "Daniel",
+          "role": "Product Manager",
+          "text": "I think the real question is whether we’re debating the full vision or a scoped first version."
+        }
+      ],
+      "coordinates": {
+        "Maya": {
+          "x": -2.2,
+          "y": 4.4,
+          "z": 0
+        },
+        "Alex": {
+          "x": 2.0,
+          "y": -4.0,
+          "z": 0
+        },
+        "Daniel": {
+          "x": 0.2,
+          "y": -0.6,
+          "z": 0
+        }
+      },
+      "interpretation": {
+        "Maya": "Strongly vision-driven and somewhat launch-urgent. She is arguing for momentum, distinctiveness, and timing.",
+        "Alex": "Strongly execution-oriented with concern for stability and real-world performance, not demo performance.",
+        "Daniel": "Near the center, slightly on the execution side. He reframes the debate from 'ship or wait' into 'what version are we actually shipping?'",
+        "round_meaning": "The meeting opens with clear structural tension between big vision and operational reality, while PM starts carving out a middle path."
+      }
+    },
+    {
+      "round": 2,
+      "dialogue": [
+        {
+          "speaker": "Leo",
+          "role": "Growth Lead",
+          "text": "From a launch perspective, this is the strongest story we’ve had in a while. It’s clear, exciting, and easy to explain."
+        },
+        {
+          "speaker": "Serena",
+          "role": "Design Lead",
+          "text": "It’s easy to explain until the user actually tries it and feels embarrassed by it. Speaking is already vulnerable. A rough experience here lands harder than a rough experience somewhere else."
+        },
+        {
+          "speaker": "Maya",
+          "role": "Founder / CEO",
+          "text": "I’m not saying quality doesn’t matter. I’m saying the value of getting this in people’s hands is also real."
+        }
+      ],
+      "coordinates": {
+        "Leo": {
+          "x": -4.2,
+          "y": 4.6,
+          "z": 1
+        },
+        "Serena": {
+          "x": 3.6,
+          "y": 1.8,
+          "z": 1
+        },
+        "Maya": {
+          "x": -2.6,
+          "y": 4.0,
+          "z": 1
+        }
+      },
+      "interpretation": {
+        "Leo": "The most launch-oriented voice so far: high vision and high short-term pressure.",
+        "Serena": "Not anti-vision, but strongly anchored in long-term trust, emotional safety, and experience quality.",
+        "Maya": "Still on the vision side, but slightly less extreme than Leo because she acknowledges quality as a real constraint.",
+        "round_meaning": "Growth and founder cluster around launch momentum, while design introduces a different kind of risk: shame, trust, and emotional UX."
+      }
+    },
+    {
+      "round": 3,
+      "dialogue": [
+        {
+          "speaker": "Priya",
+          "role": "Learning Content Lead",
+          "text": "My concern is not just roughness. It’s whether the feedback is pedagogically sound. If the AI gives a correction that is technically plausible but not actually helpful for learning, that creates confusion."
+        },
+        {
+          "speaker": "Alex",
+          "role": "Engineering Lead",
+          "text": "Yes, and some of that confusion comes from the model sounding more confident than it should."
+        },
+        {
+          "speaker": "Daniel",
+          "role": "Product Manager",
+          "text": "So one issue is feature quality, and another is how authoritative the feature feels."
+        }
+      ],
+      "coordinates": {
+        "Priya": {
+          "x": 4.2,
+          "y": -4.2,
+          "z": 2
+        },
+        "Alex": {
+          "x": 2.8,
+          "y": -3.8,
+          "z": 2
+        },
+        "Daniel": {
+          "x": 1.6,
+          "y": -0.8,
+          "z": 2
+        }
+      },
+      "interpretation": {
+        "Priya": "Strongly execution-oriented and strongly long-term. She is protecting learning quality and pedagogical integrity.",
+        "Alex": "Still execution-heavy and somewhat long-term, focused on calibration, reliability, and failure modes.",
+        "Daniel": "Moves upward on the long-term side because he is now framing the problem around trust and authority, not just feature completeness.",
+        "round_meaning": "Engineering and learning content form a strong execution / long-term cluster. PM turns the debate into a deeper product-responsibility question."
+      }
+    },
+    {
+      "round": 4,
+      "dialogue": [
+        {
+          "speaker": "Nina",
+          "role": "Customer Support Lead",
+          "text": "From the support side, I can already tell you the first wave of tickets. ‘The app marked my sentence wrong.’ ‘The app didn’t understand my accent.’ ‘Why is it correcting me differently each time?’"
+        },
+        {
+          "speaker": "Leo",
+          "role": "Growth Lead",
+          "text": "But we also shouldn’t underestimate how many users will forgive imperfections if the feature feels new and useful."
+        },
+        {
+          "speaker": "Serena",
+          "role": "Design Lead",
+          "text": "They’ll forgive imperfection more than they’ll forgive humiliation."
+        }
+      ],
+      "coordinates": {
+        "Nina": {
+          "x": -3.8,
+          "y": -4.0,
+          "z": 3
+        },
+        "Leo": {
+          "x": -3.6,
+          "y": 4.2,
+          "z": 3
+        },
+        "Serena": {
+          "x": 4.0,
+          "y": 1.4,
+          "z": 3
+        }
+      },
+      "interpretation": {
+        "Nina": "Strong execution plus short-term pressure. She is focused on the immediate consequences of user confusion and complaint volume.",
+        "Leo": "Strong vision plus short-term pressure. He sees forgiveness, novelty, and story value.",
+        "Serena": "Remains vision-adjacent but anchored in long-term trust. She distinguishes embarrassment from ordinary product roughness.",
+        "round_meaning": "This is one of the clearest spread rounds: support, growth, and design occupy three different semantic corners."
+      }
+    },
+    {
+      "round": 5,
+      "dialogue": [
+        {
+          "speaker": "Maya",
+          "role": "Founder / CEO",
+          "text": "What if we launch it explicitly as beta? That gives us room to learn without pretending it’s final."
+        },
+        {
+          "speaker": "Nina",
+          "role": "Customer Support Lead",
+          "text": "‘Beta’ helps internally more than externally. Most users won’t calibrate their expectations the way we want them to."
+        },
+        {
+          "speaker": "Priya",
+          "role": "Learning Content Lead",
+          "text": "Also, ‘beta’ doesn’t solve the teaching problem. If it gives shaky feedback, it still shapes learner behavior."
+        },
+        {
+          "speaker": "Daniel",
+          "role": "Product Manager",
+          "text": "I think we need to separate ‘can we label it carefully’ from ‘is the experience responsible enough to ship.’"
+        }
+      ],
+      "coordinates": {
+        "Maya": {
+          "x": -3.0,
+          "y": 3.2,
+          "z": 4
+        },
+        "Nina": {
+          "x": -3.2,
+          "y": -3.8,
+          "z": 4
+        },
+        "Priya": {
+          "x": 4.4,
+          "y": -4.0,
+          "z": 4
+        },
+        "Daniel": {
+          "x": 1.2,
+          "y": -0.6,
+          "z": 4
+        }
+      },
+      "interpretation": {
+        "Maya": "Still on the vision side and still launch-leaning, but now searching for a responsible release frame.",
+        "Nina": "Grounded in immediate reality. She rejects 'beta' as insufficient expectation management.",
+        "Priya": "Stays deeply long-term and execution-oriented. She is protecting learner behavior, not launch framing.",
+        "Daniel": "Pushes the discussion toward product responsibility rather than messaging alone.",
+        "round_meaning": "Founder tries a framing solution; support, learning, and PM split apart the problem into expectation, pedagogy, and responsibility."
+      }
+    },
+    {
+      "round": 6,
+      "dialogue": [
+        {
+          "speaker": "Alex",
+          "role": "Engineering Lead",
+          "text": "If we cut real-time correction, the whole thing gets a lot safer. Live interruption is where the system feels smartest in demos, but also where it fails most visibly."
+        },
+        {
+          "speaker": "Serena",
+          "role": "Design Lead",
+          "text": "I actually agree. Live correction is impressive, but it also feels the most judgmental."
+        },
+        {
+          "speaker": "Leo",
+          "role": "Growth Lead",
+          "text": "It’s also the most marketable part. If we remove that, are we weakening the hook too much?"
+        }
+      ],
+      "coordinates": {
+        "Alex": {
+          "x": -0.8,
+          "y": -3.6,
+          "z": 5
+        },
+        "Serena": {
+          "x": 2.8,
+          "y": 0.8,
+          "z": 5
+        },
+        "Leo": {
+          "x": -3.4,
+          "y": 4.0,
+          "z": 5
+        }
+      },
+      "interpretation": {
+        "Alex": "Moves closer to the center on the x-axis because he is now proposing a concrete shipping compromise, but remains strongly execution-oriented.",
+        "Serena": "Supports the scope cut from a trust and tone perspective, sitting between vision and execution but still long-term.",
+        "Leo": "Defends the strongest hook, keeping the discussion on the vision / launch side.",
+        "round_meaning": "This is the clearest product trade-off crystallization: demo magic versus stable, humane product behavior."
+      }
+    },
+    {
+      "round": 7,
+      "dialogue": [
+        {
+          "speaker": "Daniel",
+          "role": "Product Manager",
+          "text": "Not necessarily. We could position the first release as ‘conversation practice plus recap,’ not ‘instant speaking coach.’"
+        },
+        {
+          "speaker": "Maya",
+          "role": "Founder / CEO",
+          "text": "That makes sense to me if the recap still feels differentiated."
+        },
+        {
+          "speaker": "Priya",
+          "role": "Learning Content Lead",
+          "text": "I’d be much more comfortable with post-session reflection than constant in-the-moment correction."
+        }
+      ],
+      "coordinates": {
+        "Daniel": {
+          "x": 0.8,
+          "y": -0.1,
+          "z": 6
+        },
+        "Maya": {
+          "x": 0.4,
+          "y": 1.8,
+          "z": 6
+        },
+        "Priya": {
+          "x": 2.4,
+          "y": -1.8,
+          "z": 6
+        }
+      },
+      "interpretation": {
+        "Daniel": "Becomes the clearest bridge point so far, almost at the semantic center.",
+        "Maya": "Starts moving away from pure launch pressure and toward a scoped, differentiated first slice.",
+        "Priya": "Moves inward because the proposed scope is much closer to something she can support.",
+        "round_meaning": "This is the first real convergence round. The compromise shape becomes legible."
+      }
+    },
+    {
+      "round": 8,
+      "dialogue": [
+        {
+          "speaker": "Leo",
+          "role": "Growth Lead",
+          "text": "My concern is that we keep sanding it down until it sounds safe but unremarkable. We do need something people want to talk about."
+        },
+        {
+          "speaker": "Alex",
+          "role": "Engineering Lead",
+          "text": "And my concern is that we launch something people talk about for the wrong reason."
+        },
+        {
+          "speaker": "Serena",
+          "role": "Design Lead",
+          "text": "There’s probably a middle ground where the experience still feels alive, but doesn’t overclaim competence."
+        }
+      ],
+      "coordinates": {
+        "Leo": {
+          "x": -1.8,
+          "y": 2.8,
+          "z": 7
+        },
+        "Alex": {
+          "x": 0.6,
+          "y": -2.4,
+          "z": 7
+        },
+        "Serena": {
+          "x": 1.8,
+          "y": 1.0,
+          "z": 7
+        }
+      },
+      "interpretation": {
+        "Leo": "Still the clearest voice for launch energy and distinctiveness, but less extreme than before.",
+        "Alex": "Still strongly execution-oriented, but now closer to the center because the scope is narrowing.",
+        "Serena": "Occupies the true calibration position: not anti-vision, not anti-launch, but strongly against overclaiming.",
+        "round_meaning": "This round keeps tension alive, but the trajectories are visibly closer than in the earlier conflict peak."
+      }
+    },
+    {
+      "round": 9,
+      "dialogue": [
+        {
+          "speaker": "Nina",
+          "role": "Customer Support Lead",
+          "text": "If we do this, I want clear expectation-setting in the UI. Not buried in a help article—actually in the flow."
+        },
+        {
+          "speaker": "Daniel",
+          "role": "Product Manager",
+          "text": "We can do that. We can constrain the first set of scenarios too—travel, ordering food, small talk—where the conversational patterns are more predictable."
+        },
+        {
+          "speaker": "Alex",
+          "role": "Engineering Lead",
+          "text": "That would help a lot. Narrower scenarios mean fewer edge cases and more stable performance."
+        }
+      ],
+      "coordinates": {
+        "Nina": {
+          "x": -1.4,
+          "y": -2.0,
+          "z": 8
+        },
+        "Daniel": {
+          "x": 0.3,
+          "y": -0.1,
+          "z": 8
+        },
+        "Alex": {
+          "x": 1.4,
+          "y": -1.8,
+          "z": 8
+        }
+      },
+      "interpretation": {
+        "Nina": "Still anchored in immediate practical risk, but closer to the emerging center because the team is now discussing real mitigations.",
+        "Daniel": "Almost exactly at the decision center, turning compromise into operational plan.",
+        "Alex": "Still execution-oriented and somewhat long-term, but now aligned enough with the plan to move inward.",
+        "round_meaning": "The conversation shifts from abstract disagreement to implementable release design. The field visibly compresses."
+      }
+    },
+    {
+      "round": 10,
+      "dialogue": [
+        {
+          "speaker": "Maya",
+          "role": "Founder / CEO",
+          "text": "Okay, I think I’m hearing a path. We launch a clearly scoped first version next month: limited scenarios, no live correction, supportive recap afterward, and very explicit expectation-setting."
+        },
+        {
+          "speaker": "Leo",
+          "role": "Growth Lead",
+          "text": "I can live with that if we still frame it as a meaningful new speaking experience, not just a hidden experiment."
+        },
+        {
+          "speaker": "Serena",
+          "role": "Design Lead",
+          "text": "I’m on board if the tone stays encouraging and non-punitive."
+        },
+        {
+          "speaker": "Daniel",
+          "role": "Product Manager",
+          "text": "Great. Then the decision is not ‘ship the full vision or wait.’ It’s ‘ship the right first slice.’"
+        }
+      ],
+      "coordinates": {
+        "Maya": {
+          "x": -0.2,
+          "y": 1.0,
+          "z": 9
+        },
+        "Leo": {
+          "x": -0.8,
+          "y": 1.4,
+          "z": 9
+        },
+        "Serena": {
+          "x": 1.0,
+          "y": 0.8,
+          "z": 9
+        },
+        "Daniel": {
+          "x": 0.2,
+          "y": 0.0,
+          "z": 9
+        }
+      },
+      "interpretation": {
+        "Maya": "Ends near the center but still slightly vision-leaning, showing she accepts a scoped launch without abandoning the larger story.",
+        "Leo": "Still the most launch-forward person in the final cluster, but now much closer to the shared decision zone.",
+        "Serena": "Remains the trust / tone guardrail, close to the cluster but not identical to the founder or PM positions.",
+        "Daniel": "Sits at the center of the final synthesis, embodying the scoped compromise.",
+        "round_meaning": "The team ends in a loose alignment cluster: close enough to show shared decision, different enough to preserve stakeholder identity."
+      }
+    }
+  ]
+}
